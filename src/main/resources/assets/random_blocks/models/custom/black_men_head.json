@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "format_version": "3.2",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "Black men",
+  "ambientocclusion": true,
+  "front_gui_light": false,
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "cube",
+      "from": [
+        4,
+        0,
+        4
+      ],
+      "to": [
+        12,
+        8,
+        12
+      ],
+      "autouv": 0,
+      "color": 5,
+      "locked": false,
+      "origin": [
+        12,
+        8,
+        14
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      },
+      "uuid": "6cb46b33-9e7b-9191-4295-dc525c1e0c7c"
+    }
+  ],
+  "outliner": [
+    {
+      "name": "Head",
+      "uuid": "105cdd6b-c1d4-d4dd-b89d-77ddd9943de1",
+      "export": true,
+      "isOpen": true,
+      "locked": false,
+      "visibility": true,
+      "autouv": 0,
+      "origin": [
+        23,
+        20,
+        14
+      ],
+      "children": [
+        "6cb46b33-9e7b-9191-4295-dc525c1e0c7c"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "random_blocks:textures/dead_oak.png",
+    "icon": {
+      "item": "random_blocks:dead_oak_log"
+    },
+    "title": {
+      "translate": "advancements.go_to_a_strange_plain.title"
+    },
+    "description": {
+      "translate": "advancements.go_to_a_strange_plain.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "go_to_a_strange_plain": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "random_blocks:dead_plains"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

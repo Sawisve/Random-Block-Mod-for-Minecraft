@@ -1,0 +1,17 @@
+{
+  "_fv": 8,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "livingedisk",
+    "name": "Disc",
+    "description": "Credits",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "music.credits"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

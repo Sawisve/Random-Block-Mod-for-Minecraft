@@ -1,0 +1,17 @@
+{
+  "_fv": 8,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "dragon",
+    "name": "Disc",
+    "description": "Dragon",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "music.dragon"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

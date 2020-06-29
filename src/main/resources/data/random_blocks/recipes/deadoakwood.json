@@ -1,0 +1,16 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "random_blocks:dead_oak_log"
+    }
+  },
+  "result": {
+    "item": "random_blocks:dead_oak_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_fv": 8,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "game",
+    "name": "Disc",
+    "description": "Game",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "music.game"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

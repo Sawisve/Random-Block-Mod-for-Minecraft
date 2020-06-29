@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "random_blocks:blocks/dead_oak1",
+    "up": "random_blocks:blocks/dead_oak1",
+    "north": "random_blocks:blocks/dead_oak",
+    "east": "random_blocks:blocks/dead_oak",
+    "south": "random_blocks:blocks/dead_oak",
+    "west": "random_blocks:blocks/dead_oak",
+    "particle": "random_blocks:blocks/dead_oak1"
+  }
+}

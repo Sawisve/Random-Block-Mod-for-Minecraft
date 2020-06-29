@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "random_blocks:blocks/air",
+    "up": "random_blocks:blocks/air",
+    "north": "random_blocks:blocks/air",
+    "east": "random_blocks:blocks/air",
+    "south": "random_blocks:blocks/air",
+    "west": "random_blocks:blocks/air",
+    "particle": "random_blocks:blocks/air"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "random_blocks:fonrium"
+    },
+    "1": {
+      "item": "random_blocks:fonrium"
+    },
+    "2": {
+      "item": "random_blocks:fonrium"
+    },
+    "3": {
+      "item": "random_blocks:fonrium"
+    },
+    "5": {
+      "item": "random_blocks:fonrium"
+    },
+    "6": {
+      "item": "random_blocks:fonrium"
+    },
+    "8": {
+      "item": "random_blocks:fonrium"
+    }
+  },
+  "result": {
+    "item": "random_blocks:fonriumlegs",
+    "count": 1
+  }
+}

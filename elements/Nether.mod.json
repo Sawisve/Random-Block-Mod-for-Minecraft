@@ -1,0 +1,17 @@
+{
+  "_fv": 8,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "nether",
+    "name": "Disc",
+    "description": "Nether",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "music.nether"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

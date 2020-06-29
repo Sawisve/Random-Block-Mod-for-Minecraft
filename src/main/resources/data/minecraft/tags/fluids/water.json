@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "random_blocks:poisoned_water",
+    "random_blocks:poisoned_water_flowing"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "_fv": 8,
+  "_type": "biome",
+  "definition": {
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "generateLakes": false,
+    "treeType": 1,
+    "vanillaTreeType": "Default",
+    "minHeight": 4,
+    "spawnVines": false,
+    "treeVines": {
+      "value": "Blocks.VOID_AIR"
+    },
+    "treeStem": {
+      "value": "CUSTOM:Deadoak"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:Deadleaves"
+    },
+    "treeFruits": {
+      "value": "Blocks.VOID_AIR"
+    },
+    "customColors": true,
+    "airColor": {
+      "value": -6710887,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -3355444,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -6710887,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 3,
+    "grassPerChunk": 4,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "spawnBiome": true,
+    "biomeWeight": 50,
+    "biomeType": "DESERT",
+    "biomeCategory": "PLAINS",
+    "parent": {
+      "value": "plains"
+    },
+    "biomeDictionaryTypes": [
+      "DEAD"
+    ],
+    "spawnList": [
+      {
+        "value": "EntitySkeleton"
+      },
+      {
+        "value": "EntitySkeletonHorse"
+      }
+    ]
+  }
+}

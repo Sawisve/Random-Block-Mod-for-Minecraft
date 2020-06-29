@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "random_blocks:blocks/banana_plant",
+    "particle": "random_blocks:blocks/banana_plant"
+  }
+}

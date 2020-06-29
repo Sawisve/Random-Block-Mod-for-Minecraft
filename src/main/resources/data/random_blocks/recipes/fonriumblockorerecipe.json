@@ -1,0 +1,13 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "random_blocks:fonrium_block"
+    }
+  ],
+  "result": {
+    "item": "random_blocks:fonrium",
+    "count": 9
+  }
+}

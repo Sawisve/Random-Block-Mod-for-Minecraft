@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "random_blocks:blocks/fonrium_ore_block",
+    "particle": "random_blocks:blocks/fonrium_ore_block"
+  }
+}

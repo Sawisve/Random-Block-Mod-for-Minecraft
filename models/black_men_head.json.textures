@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "head": {
+      "map": {},
+      "name": "head"
+    },
+    "default": {
+      "map": {},
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "random_blocks:fonrium"
+    },
+    "3": {
+      "item": "random_blocks:fonrium"
+    },
+    "5": {
+      "item": "random_blocks:fonrium"
+    },
+    "7": {
+      "item": "random_blocks:fonrium"
+    }
+  },
+  "result": {
+    "item": "random_blocks:voidball",
+    "count": 1
+  }
+}

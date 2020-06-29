@@ -1,0 +1,22 @@
+{
+  "_fv": 8,
+  "_type": "fluid",
+  "definition": {
+    "name": "Poisonedwater",
+    "textureStill": "waaater",
+    "textureFlowing": "waaater",
+    "luminosity": 0,
+    "density": 900,
+    "viscosity": 1000,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "spawnWorldTypes": [],
+    "onEntityCollides": {
+      "name": "PoisonedwaterMobplayerCollidesBlock"
+    }
+  }
+}

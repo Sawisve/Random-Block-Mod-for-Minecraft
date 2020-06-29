@@ -1,0 +1,17 @@
+{
+  "_fv": 8,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "creative",
+    "name": "Disc",
+    "description": "Creative",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "music.creative"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

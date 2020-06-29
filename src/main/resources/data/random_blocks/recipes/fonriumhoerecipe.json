@@ -1,0 +1,27 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "random_blocks:fonrium"
+    },
+    "1": {
+      "item": "random_blocks:fonrium"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "random_blocks:fonrium_hoe",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "random_blocks:blocks/table_top",
+    "particle": "random_blocks:blocks/table_top"
+  }
+}

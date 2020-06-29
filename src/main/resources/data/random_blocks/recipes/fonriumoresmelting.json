@@ -1,0 +1,12 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "random_blocks:fonrium_ore"
+  },
+  "result": {
+    "item": "random_blocks:fonrium_dust"
+  }
+}

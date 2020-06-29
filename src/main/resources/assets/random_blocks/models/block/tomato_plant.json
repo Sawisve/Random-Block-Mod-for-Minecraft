@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "random_blocks:blocks/tomato_plant",
+    "particle": "random_blocks:blocks/tomato_plant"
+  }
+}

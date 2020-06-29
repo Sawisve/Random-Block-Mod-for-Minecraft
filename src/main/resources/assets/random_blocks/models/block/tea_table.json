@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "random_blocks:blocks/table_botom",
+    "top": "random_blocks:blocks/table_top",
+    "side": "random_blocks:blocks/tt"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_fv": 8,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "end",
+    "name": "Disc",
+    "description": "End",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "music.end"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

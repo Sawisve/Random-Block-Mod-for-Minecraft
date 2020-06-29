@@ -1,0 +1,12 @@
+{
+  "_fv": 8,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "F4",
+    "keyBindingName": "Super Dupper Graphics Pack",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OnKeykPressed"
+    }
+  }
+}

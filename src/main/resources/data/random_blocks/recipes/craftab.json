@@ -1,0 +1,26 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "random_blocks:dead_oak_planks"
+    },
+    "1": {
+      "item": "random_blocks:dead_oak_planks"
+    },
+    "2": {
+      "item": "random_blocks:dead_oak_planks"
+    },
+    "3": {
+      "item": "random_blocks:dead_oak_planks"
+    }
+  },
+  "result": {
+    "item": "minecraft:crafting_table",
+    "count": 1
+  }
+}

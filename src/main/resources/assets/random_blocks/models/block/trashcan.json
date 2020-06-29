@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "random_blocks:blocks/table_top",
+    "up": "random_blocks:blocks/trash_can_top",
+    "north": "random_blocks:blocks/table_top",
+    "east": "random_blocks:blocks/table_top",
+    "south": "random_blocks:blocks/table_top",
+    "west": "random_blocks:blocks/table_top",
+    "particle": "random_blocks:blocks/table_top"
+  }
+}
