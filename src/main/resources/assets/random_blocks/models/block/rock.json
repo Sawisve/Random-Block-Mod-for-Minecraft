@@ -1,0 +1,8 @@
+{
+  "parent": "random_blocks:custom/rock",
+  "textures": {
+    "all": "random_blocks:blocks/cbm",
+    "particle": "random_blocks:blocks/cbm",
+    "0": "random_blocks:blocks/cbm"
+  }
+}

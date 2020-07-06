@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "black",
+        "3": "black2"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "random_blocks:block/sky_lands_portal_ew"
+    },
+    "axis=x": {
+      "model": "random_blocks:block/sky_lands_portal_ns"
+    }
+  }
+}

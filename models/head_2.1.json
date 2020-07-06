@@ -1,0 +1,60 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"2": "minecraft divers/black",
+		"3": "minecraft divers/black2",
+		"particle": "minecraft divers/black"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [12, 8, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [12, 8, 12]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [27.75, 32, 0],
+			"translation": [0, 2.25, 1.75],
+			"scale": [0.64, 0.64, 0.64]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [27.75, 32, 0],
+			"translation": [0, 2.25, 1.75],
+			"scale": [0.64, 0.64, 0.64]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 18.75, 0],
+			"translation": [0, 4.25, 1.5],
+			"scale": [0.64, 0.64, 0.64]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 18.75, 0],
+			"translation": [0, 4.25, 1.5],
+			"scale": [0.64, 0.64, 0.64]
+		},
+		"ground": {
+			"translation": [0, 5.25, 0],
+			"scale": [0.64, 0.64, 0.64]
+		},
+		"gui": {
+			"rotation": [15.5, -133.25, 0],
+			"translation": [0, 4, 0]
+		},
+		"head": {
+			"translation": [0, 6.5, 0],
+			"scale": [1.62, 1.62, 1.62]
+		},
+		"fixed": {
+			"translation": [0, 4, 0]
+		}
+	}
+}

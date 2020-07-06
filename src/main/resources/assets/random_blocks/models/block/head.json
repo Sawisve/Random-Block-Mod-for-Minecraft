@@ -1,0 +1,9 @@
+{
+  "parent": "random_blocks:custom/head_2.1",
+  "textures": {
+    "all": "random_blocks:blocks/black2",
+    "particle": "random_blocks:blocks/black2",
+    "2": "random_blocks:blocks/black",
+    "3": "random_blocks:blocks/black2"
+  }
+}
