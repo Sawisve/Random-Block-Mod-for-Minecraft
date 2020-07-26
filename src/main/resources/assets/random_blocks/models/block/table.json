@@ -1,12 +1,10 @@
 {
-  "parent": "block/cube",
+  "parent": "random_blocks:custom/tableuh_2",
   "textures": {
-    "down": "random_blocks:blocks/table_botom",
-    "up": "random_blocks:blocks/table_top",
-    "north": "random_blocks:blocks/table_lfrb",
-    "east": "random_blocks:blocks/table_lfrb",
-    "south": "random_blocks:blocks/table_lfrb",
-    "west": "random_blocks:blocks/table_lfrb",
-    "particle": "random_blocks:blocks/table_botom"
+    "all": "random_blocks:blocks/table_lfrb",
+    "particle": "random_blocks:blocks/table_lfrb",
+    "0": "random_blocks:blocks/table_top",
+    "1": "random_blocks:blocks/table_lfrb",
+    "2": "random_blocks:blocks/table_botom"
   }
 }

@@ -1,5 +1,6 @@
 package net.mcreator.random_blocks.procedures;
 
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.fml.network.NetworkHooks;
 
 import net.minecraft.world.World;
@@ -8,6 +9,7 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.PacketBuffer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -15,6 +17,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.random_blocks.item.VoidFragmentsItem;
 import net.mcreator.random_blocks.gui.VoiddGui;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
@@ -23,7 +26,7 @@ import io.netty.buffer.Unpooled;
 @RandomBlocksModElements.ModElement.Tag
 public class VoidballRightClickedInAirProcedure extends RandomBlocksModElements.ModElement {
 	public VoidballRightClickedInAirProcedure(RandomBlocksModElements instance) {
-		super(instance, 87);
+		super(instance, 92);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -70,5 +73,12 @@ public class VoidballRightClickedInAirProcedure extends RandomBlocksModElements.
 			}
 		}
 		entity.attackEntityFrom(DamageSource.GENERIC, (float) 1);
+		if ((Math.random() < 0.7)) {
+			if (entity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(VoidFragmentsItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			}
+		}
 	}
 }

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cbm",
+        "1": "unnamed"
+      },
+      "name": "default"
+    }
+  }
+}

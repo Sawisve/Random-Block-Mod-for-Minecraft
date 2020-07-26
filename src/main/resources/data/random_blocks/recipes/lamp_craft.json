@@ -1,0 +1,42 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_wool"
+    },
+    "1": {
+      "item": "minecraft:white_wool"
+    },
+    "2": {
+      "item": "minecraft:white_wool"
+    },
+    "3": {
+      "item": "minecraft:white_wool"
+    },
+    "4": {
+      "item": "minecraft:torch"
+    },
+    "5": {
+      "item": "minecraft:white_wool"
+    },
+    "6": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "7": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "8": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "result": {
+    "item": "random_blocks:lamp",
+    "count": 1
+  }
+}

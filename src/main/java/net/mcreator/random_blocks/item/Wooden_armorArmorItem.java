@@ -30,7 +30,7 @@ public class Wooden_armorArmorItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:woodenboots")
 	public static final Item boots = null;
 	public Wooden_armorArmorItem(RandomBlocksModElements instance) {
-		super(instance, 21);
+		super(instance, 25);
 	}
 
 	@Override

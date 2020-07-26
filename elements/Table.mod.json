@@ -2,14 +2,14 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "table_botom",
+    "texture": "table_lfrb",
     "textureTop": "table_top",
     "textureLeft": "table_lfrb",
     "textureFront": "table_lfrb",
     "textureRight": "table_lfrb",
     "textureBack": "table_lfrb",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 2,
+    "customModelName": "tableuh_2:default",
     "rotationMode": 0,
     "hasTransparency": true,
     "connectedSides": true,
@@ -37,7 +37,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
       "value": "ROCK"
     },

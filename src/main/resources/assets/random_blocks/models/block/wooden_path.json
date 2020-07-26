@@ -1,5 +1,5 @@
 {
-  "parent": "random_blocks:custom/wooden_path_2.2",
+  "parent": "random_blocks:custom/wooden_path_2.3",
   "textures": {
     "all": "random_blocks:blocks/unnamed",
     "particle": "random_blocks:blocks/unnamed",

@@ -1,0 +1,9 @@
+{
+  "parent": "random_blocks:custom/cobblestone_sign",
+  "textures": {
+    "all": "random_blocks:blocks/css2",
+    "particle": "random_blocks:blocks/css2",
+    "0": "random_blocks:blocks/cbm",
+    "1": "random_blocks:blocks/unnamed"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "random_blocks:custom/brick_sign",
+  "textures": {
+    "all": "random_blocks:blocks/bs4",
+    "particle": "random_blocks:blocks/bs4",
+    "0": "random_blocks:blocks/cbm",
+    "2": "random_blocks:blocks/red-brick-block-e1566147526994"
+  }
+}

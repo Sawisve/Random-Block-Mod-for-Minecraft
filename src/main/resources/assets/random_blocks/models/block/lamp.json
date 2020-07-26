@@ -1,0 +1,10 @@
+{
+  "parent": "random_blocks:custom/lampnolit2",
+  "textures": {
+    "all": "random_blocks:blocks/imported_piskel",
+    "particle": "random_blocks:blocks/imported_piskel",
+    "0": "random_blocks:blocks/unnamed",
+    "1": "random_blocks:blocks/imported_piskel",
+    "3": "random_blocks:blocks/texture3"
+  }
+}

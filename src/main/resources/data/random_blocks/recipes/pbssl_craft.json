@@ -1,0 +1,22 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "random_blocks:polished_black_stone"
+    },
+    "1": {
+      "item": "random_blocks:polished_black_stone"
+    },
+    "2": {
+      "item": "random_blocks:polished_black_stone"
+    }
+  },
+  "result": {
+    "item": "random_blocks:pbssl",
+    "count": 1
+  }
+}

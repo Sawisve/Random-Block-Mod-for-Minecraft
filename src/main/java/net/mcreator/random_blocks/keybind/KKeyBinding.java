@@ -29,7 +29,7 @@ public class KKeyBinding extends RandomBlocksModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public KKeyBinding(RandomBlocksModElements instance) {
-		super(instance, 94);
+		super(instance, 101);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

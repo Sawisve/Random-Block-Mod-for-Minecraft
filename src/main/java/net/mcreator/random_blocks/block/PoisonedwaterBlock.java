@@ -41,7 +41,7 @@ public class PoisonedwaterBlock extends RandomBlocksModElements.ModElement {
 	private FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public PoisonedwaterBlock(RandomBlocksModElements instance) {
-		super(instance, 22);
+		super(instance, 26);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "unnamed",
+        "1": "imported_piskel",
+        "2": "texture2"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -15,7 +15,7 @@ public class FonriumItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:fonrium")
 	public static final Item block = null;
 	public FonriumItem(RandomBlocksModElements instance) {
-		super(instance, 24);
+		super(instance, 28);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public class EtheriteGemItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:etherite_gem")
 	public static final Item block = null;
 	public EtheriteGemItem(RandomBlocksModElements instance) {
-		super(instance, 25);
+		super(instance, 29);
 	}
 
 	@Override

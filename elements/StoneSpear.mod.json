@@ -1,0 +1,48 @@
+{
+  "_fv": 8,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "cobblespear",
+    "customModelName": "Normal",
+    "name": "Stone spear",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "item.trident.throw"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 2.5,
+    "onRangedItemUsed": {
+      "name": "SSpearUsed"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 2.6999999999999997,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Sper"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "SSpearHitBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "SSpearHit"
+    },
+    "onBulletHitsEntity": {
+      "name": "SSpearHit"
+    }
+  }
+}

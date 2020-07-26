@@ -1,8 +1,10 @@
 {
-  "parent": "block/slab",
+  "parent": "random_blocks:custom/teh_a_table",
   "textures": {
-    "bottom": "random_blocks:blocks/table_botom",
-    "top": "random_blocks:blocks/table_top",
-    "side": "random_blocks:blocks/tt"
+    "all": "random_blocks:blocks/tt",
+    "particle": "random_blocks:blocks/tt",
+    "0": "random_blocks:blocks/table_top",
+    "1": "random_blocks:blocks/table_lfrb",
+    "2": "random_blocks:blocks/table_botom"
   }
 }

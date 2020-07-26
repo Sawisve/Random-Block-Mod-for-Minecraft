@@ -11,6 +11,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.RegisterDimensionsEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.ModDimension;
 import net.minecraftforge.common.MinecraftForge;
@@ -70,6 +71,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.random_blocks.procedures.SkyLandsPlayerEntersDimensionProcedure;
 import net.mcreator.random_blocks.item.SkyLandsItem;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
@@ -101,7 +103,7 @@ public class SkyLandsDimension extends RandomBlocksModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public SkyLandsDimension(RandomBlocksModElements instance) {
-		super(instance, 96);
+		super(instance, 43);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
@@ -708,7 +710,24 @@ public class SkyLandsDimension extends RandomBlocksModElements.ModElement {
 			return (float) (d0 * 2.0D + d1) / 3.0F;
 		}
 	}
-
+	@SubscribeEvent
+	public void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
+		Entity entity = event.getPlayer();
+		World world = entity.world;
+		int x = (int) entity.getPosX();
+		int y = (int) entity.getPosY();
+		int z = (int) entity.getPosZ();
+		if (event.getTo() == type) {
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SkyLandsPlayerEntersDimensionProcedure.executeProcedure($_dependencies);
+			}
+		}
+	}
 	public static class ChunkProviderModded extends EndChunkGenerator {
 		private static final int SEALEVEL = 63;
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {

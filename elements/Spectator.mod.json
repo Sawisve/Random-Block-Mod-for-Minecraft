@@ -1,0 +1,12 @@
+{
+  "_fv": 8,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "F10",
+    "keyBindingName": "Spectator",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SpectatorOnKeyPressed"
+    }
+  }
+}

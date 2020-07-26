@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "table_top",
+        "1": "table_lfrb",
+        "2": "table_botom"
+      },
+      "name": "default"
+    }
+  }
+}

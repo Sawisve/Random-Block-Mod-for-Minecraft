@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cbm",
+        "2": "red-brick-block-e1566147526994"
+      },
+      "name": "default"
+    }
+  }
+}

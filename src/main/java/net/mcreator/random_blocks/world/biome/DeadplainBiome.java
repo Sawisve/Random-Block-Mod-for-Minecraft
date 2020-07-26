@@ -49,7 +49,7 @@ public class DeadplainBiome extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:dead_plains")
 	public static final CustomBiome biome = null;
 	public DeadplainBiome(RandomBlocksModElements instance) {
-		super(instance, 41);
+		super(instance, 46);
 	}
 
 	@Override

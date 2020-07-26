@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "random_blocks:blocks/white",
+    "up": "random_blocks:blocks/white",
+    "north": "random_blocks:blocks/white",
+    "east": "random_blocks:blocks/white",
+    "south": "random_blocks:blocks/white",
+    "west": "random_blocks:blocks/white",
+    "particle": "random_blocks:blocks/white"
+  }
+}

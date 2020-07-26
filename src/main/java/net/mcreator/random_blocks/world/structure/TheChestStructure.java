@@ -32,7 +32,7 @@ import java.util.Random;
 @RandomBlocksModElements.ModElement.Tag
 public class TheChestStructure extends RandomBlocksModElements.ModElement {
 	public TheChestStructure(RandomBlocksModElements instance) {
-		super(instance, 71);
+		super(instance, 76);
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class TheChestStructure extends RandomBlocksModElements.ModElement {
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16) + 8;
 						int k = ck + random.nextInt(16) + 8;
-						int j = iworld.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
+						int j = iworld.getHeight(Heightmap.Type.WORLD_SURFACE_WG, i, k);
 						j -= 1;
 						Template template = ((ServerWorld) iworld.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("random_blocks", "chest"));

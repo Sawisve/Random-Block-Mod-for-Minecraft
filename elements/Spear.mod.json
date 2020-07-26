@@ -1,0 +1,48 @@
+{
+  "_fv": 8,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "spear",
+    "customModelName": "Normal",
+    "name": "Iron spear",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "item.trident.throw"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 3.2,
+    "onRangedItemUsed": {
+      "name": "SpearRangedItemUsed"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 3.4,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Sper"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "SpearBulletHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "SpearHitProcedure"
+    },
+    "onBulletHitsEntity": {
+      "name": "SpearHitProcedure"
+    }
+  }
+}

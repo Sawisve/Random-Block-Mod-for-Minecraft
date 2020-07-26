@@ -6,26 +6,26 @@
       "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "Blocks.STONE#0"
     },
     "generateLakes": true,
-    "treeType": 0,
+    "treeType": 1,
     "vanillaTreeType": "Default",
-    "minHeight": 7,
-    "spawnVines": false,
+    "minHeight": 20,
+    "spawnVines": true,
     "treeVines": {
-      "value": ""
+      "value": "Blocks.VINE"
     },
     "treeStem": {
-      "value": ""
+      "value": "Blocks.LOG"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.LEAVES"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
-    "customColors": false,
+    "customColors": true,
     "airColor": {
       "value": -6369537,
       "falpha": 0.0

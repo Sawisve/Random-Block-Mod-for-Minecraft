@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "wooden_path_2.2:default",
+    "customModelName": "wooden_path_2.3:default",
     "rotationMode": 1,
     "hasTransparency": true,
     "connectedSides": true,
@@ -26,7 +26,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "DECORATIONS"
     },
     "destroyTool": "Not specified",
     "customDrop": {

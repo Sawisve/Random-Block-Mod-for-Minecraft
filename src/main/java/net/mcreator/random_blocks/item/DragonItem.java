@@ -17,7 +17,7 @@ public class DragonItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:dragon")
 	public static final Item block = null;
 	public DragonItem(RandomBlocksModElements instance) {
-		super(instance, 33);
+		super(instance, 37);
 	}
 
 	@Override

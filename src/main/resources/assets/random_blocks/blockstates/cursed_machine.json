@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "random_blocks:block/cursed_machine"
+    },
+    "facing=east": {
+      "model": "random_blocks:block/cursed_machine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "random_blocks:block/cursed_machine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "random_blocks:block/cursed_machine",
+      "y": 270
+    }
+  }
+}

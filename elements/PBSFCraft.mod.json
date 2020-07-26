@@ -1,0 +1,46 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PolishedBlackStone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedBlackStone"
+      },
+      {
+        "value": "CUSTOM:PolishedBlackStone"
+      },
+      {
+        "value": "Blocks.OAK_FENCE"
+      },
+      {
+        "value": "CUSTOM:PolishedBlackStone"
+      },
+      {
+        "value": "CUSTOM:PolishedBlackStone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedBlackStone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PBSF"
+    },
+    "name": "pbsf_craft",
+    "namespace": "mod"
+  }
+}

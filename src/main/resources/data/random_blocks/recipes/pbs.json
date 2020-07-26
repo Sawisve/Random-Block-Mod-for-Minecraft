@@ -1,0 +1,9 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "random_blocks:black_stone_slab"
+  },
+  "result": "random_blocks:polished_black_stone"
+}

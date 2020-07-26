@@ -7,16 +7,16 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:oak_planks"
+      "tag": "minecraft:planks"
     },
     "2": {
-      "item": "minecraft:oak_planks"
+      "tag": "minecraft:planks"
     },
     "3": {
-      "item": "minecraft:oak_planks"
+      "tag": "minecraft:planks"
     },
     "5": {
-      "item": "minecraft:oak_planks"
+      "tag": "minecraft:planks"
     }
   },
   "result": {

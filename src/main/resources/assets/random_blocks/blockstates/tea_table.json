@@ -1,13 +1,7 @@
 {
   "variants": {
-    "type=bottom": {
+    "": {
       "model": "random_blocks:block/tea_table"
-    },
-    "type=top": {
-      "model": "random_blocks:block/tea_table_top"
-    },
-    "type=double": {
-      "model": "random_blocks:block/tea_table_full"
     }
   }
 }

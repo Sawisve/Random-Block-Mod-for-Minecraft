@@ -1,0 +1,12 @@
+{
+  "_fv": 8,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "F9",
+    "keyBindingName": "Adventure",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "AdventureOnKeyPressed"
+    }
+  }
+}

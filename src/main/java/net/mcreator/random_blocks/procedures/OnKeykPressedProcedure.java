@@ -10,7 +10,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class OnKeykPressedProcedure extends RandomBlocksModElements.ModElement {
 	public OnKeykPressedProcedure(RandomBlocksModElements instance) {
-		super(instance, 94);
+		super(instance, 100);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

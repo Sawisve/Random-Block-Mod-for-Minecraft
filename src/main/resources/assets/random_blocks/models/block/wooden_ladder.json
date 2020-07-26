@@ -1,0 +1,8 @@
+{
+  "parent": "random_blocks:custom/wouden_laideur_2",
+  "textures": {
+    "all": "random_blocks:blocks/unnamed",
+    "particle": "random_blocks:blocks/unnamed",
+    "0": "random_blocks:blocks/unnamed"
+  }
+}

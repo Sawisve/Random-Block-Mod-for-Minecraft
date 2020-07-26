@@ -103,7 +103,7 @@ public class EtherDimension extends RandomBlocksModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public EtherDimension(RandomBlocksModElements instance) {
-		super(instance, 38);
+		super(instance, 42);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

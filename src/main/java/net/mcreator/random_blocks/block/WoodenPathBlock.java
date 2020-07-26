@@ -40,14 +40,13 @@ public class WoodenPathBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:wooden_path")
 	public static final Block block = null;
 	public WoodenPathBlock(RandomBlocksModElements instance) {
-		super(instance, 99);
+		super(instance, 21);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

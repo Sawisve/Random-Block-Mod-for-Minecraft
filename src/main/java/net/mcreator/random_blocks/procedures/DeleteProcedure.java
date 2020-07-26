@@ -8,12 +8,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.ItemStack;
 
+import net.mcreator.random_blocks.item.VoidFragmentsItem;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
 @RandomBlocksModElements.ModElement.Tag
 public class DeleteProcedure extends RandomBlocksModElements.ModElement {
 	public DeleteProcedure(RandomBlocksModElements instance) {
-		super(instance, 81);
+		super(instance, 86);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -272,64 +273,11 @@ public class DeleteProcedure extends RandomBlocksModElements.ModElement {
 			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 			if (_ent != null) {
 				final int _sltid = (int) (21);
+				final ItemStack _setstack = new ItemStack(VoidFragmentsItem.block, (int) (1));
+				_setstack.setCount((int) 1);
 				_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
-						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, ItemStack.EMPTY);
-					}
-				});
-			}
-		}
-		{
-			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-			if (_ent != null) {
-				final int _sltid = (int) (22);
-				_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-					if (capability instanceof IItemHandlerModifiable) {
-						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, ItemStack.EMPTY);
-					}
-				});
-			}
-		}
-		{
-			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-			if (_ent != null) {
-				final int _sltid = (int) (23);
-				_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-					if (capability instanceof IItemHandlerModifiable) {
-						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, ItemStack.EMPTY);
-					}
-				});
-			}
-		}
-		{
-			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-			if (_ent != null) {
-				final int _sltid = (int) (24);
-				_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-					if (capability instanceof IItemHandlerModifiable) {
-						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, ItemStack.EMPTY);
-					}
-				});
-			}
-		}
-		{
-			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-			if (_ent != null) {
-				final int _sltid = (int) (25);
-				_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-					if (capability instanceof IItemHandlerModifiable) {
-						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, ItemStack.EMPTY);
-					}
-				});
-			}
-		}
-		{
-			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-			if (_ent != null) {
-				final int _sltid = (int) (26);
-				_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-					if (capability instanceof IItemHandlerModifiable) {
-						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, ItemStack.EMPTY);
+						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}
 				});
 			}

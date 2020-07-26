@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "random_blocks:block/pbssl"
+    },
+    "type=top": {
+      "model": "random_blocks:block/pbssl_top"
+    },
+    "type=double": {
+      "model": "random_blocks:block/pbssl_full"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 8,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "diamspear",
+    "customModelName": "Normal",
+    "name": "Diamond spear",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "item.trident.throw"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 3.8,
+    "onRangedItemUsed": {
+      "name": "DSpearUsed"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 3.9999999999999996,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Sper"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "DSpearHitBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "DSpearHit"
+    },
+    "onBulletHitsEntity": {
+      "name": "DSpearHit"
+    }
+  }
+}

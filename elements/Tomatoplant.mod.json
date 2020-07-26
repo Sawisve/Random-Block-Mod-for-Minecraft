@@ -21,9 +21,9 @@
       "value": "GROUND"
     },
     "customDrop": {
-      "value": "CUSTOM:Tomato"
+      "value": "Blocks.AIR"
     },
-    "dropAmount": 4,
+    "dropAmount": 0,
     "forceTicking": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -52,6 +52,9 @@
       {
         "value": "CUSTOM:SkyLandsBiome"
       }
-    ]
+    ],
+    "onDestroyedByPlayer": {
+      "name": "TomatoplantPlantDestroyedByPlayer"
+    }
   }
 }
