@@ -14,7 +14,7 @@ import java.util.Map;
 @RandomBlocksModElements.ModElement.Tag
 public class DeProcedure extends RandomBlocksModElements.ModElement {
 	public DeProcedure(RandomBlocksModElements instance) {
-		super(instance, 93);
+		super(instance, 112);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -22,7 +22,7 @@ public class VoidballItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:voidball")
 	public static final Item block = null;
 	public VoidballItem(RandomBlocksModElements instance) {
-		super(instance, 30);
+		super(instance, 46);
 	}
 
 	@Override

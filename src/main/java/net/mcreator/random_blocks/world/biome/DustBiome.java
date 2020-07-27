@@ -22,7 +22,7 @@ public class DustBiome extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:dust")
 	public static final CustomBiome biome = null;
 	public DustBiome(RandomBlocksModElements instance) {
-		super(instance, 79);
+		super(instance, 99);
 	}
 
 	@Override

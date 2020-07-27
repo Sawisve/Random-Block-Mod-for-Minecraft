@@ -11,7 +11,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class SpearRangedItemUsedProcedure extends RandomBlocksModElements.ModElement {
 	public SpearRangedItemUsedProcedure(RandomBlocksModElements instance) {
-		super(instance, 149);
+		super(instance, 157);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

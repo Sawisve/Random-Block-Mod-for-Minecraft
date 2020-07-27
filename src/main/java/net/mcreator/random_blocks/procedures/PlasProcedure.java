@@ -10,7 +10,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class PlasProcedure extends RandomBlocksModElements.ModElement {
 	public PlasProcedure(RandomBlocksModElements instance) {
-		super(instance, 83);
+		super(instance, 103);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

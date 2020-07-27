@@ -32,7 +32,7 @@ import java.util.Random;
 @RandomBlocksModElements.ModElement.Tag
 public class TheChestStructure extends RandomBlocksModElements.ModElement {
 	public TheChestStructure(RandomBlocksModElements instance) {
-		super(instance, 76);
+		super(instance, 96);
 	}
 
 	@Override

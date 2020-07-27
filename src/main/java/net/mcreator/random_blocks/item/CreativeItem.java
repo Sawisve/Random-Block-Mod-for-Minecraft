@@ -17,7 +17,7 @@ public class CreativeItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:creative")
 	public static final Item block = null;
 	public CreativeItem(RandomBlocksModElements instance) {
-		super(instance, 36);
+		super(instance, 52);
 	}
 
 	@Override

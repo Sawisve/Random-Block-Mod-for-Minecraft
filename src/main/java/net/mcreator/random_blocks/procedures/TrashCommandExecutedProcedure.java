@@ -22,7 +22,7 @@ import io.netty.buffer.Unpooled;
 @RandomBlocksModElements.ModElement.Tag
 public class TrashCommandExecutedProcedure extends RandomBlocksModElements.ModElement {
 	public TrashCommandExecutedProcedure(RandomBlocksModElements instance) {
-		super(instance, 105);
+		super(instance, 123);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

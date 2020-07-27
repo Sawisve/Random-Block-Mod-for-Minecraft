@@ -13,7 +13,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class FonriumHelmetTickEventProcedure extends RandomBlocksModElements.ModElement {
 	public FonriumHelmetTickEventProcedure(RandomBlocksModElements instance) {
-		super(instance, 77);
+		super(instance, 97);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

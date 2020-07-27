@@ -10,7 +10,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class WoodenLadderUpdateTickProcedure extends RandomBlocksModElements.ModElement {
 	public WoodenLadderUpdateTickProcedure(RandomBlocksModElements instance) {
-		super(instance, 104);
+		super(instance, 122);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

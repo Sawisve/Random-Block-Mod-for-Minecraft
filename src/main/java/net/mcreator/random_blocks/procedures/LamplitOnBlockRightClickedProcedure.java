@@ -10,7 +10,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class LamplitOnBlockRightClickedProcedure extends RandomBlocksModElements.ModElement {
 	public LamplitOnBlockRightClickedProcedure(RandomBlocksModElements instance) {
-		super(instance, 112);
+		super(instance, 130);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -17,7 +17,7 @@ public class MenuItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:menu")
 	public static final Item block = null;
 	public MenuItem(RandomBlocksModElements instance) {
-		super(instance, 35);
+		super(instance, 51);
 	}
 
 	@Override

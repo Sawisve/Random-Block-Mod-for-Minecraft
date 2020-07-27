@@ -38,9 +38,6 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBiomes": [],
-    "onEntityCollides": {
-      "name": "ChemicalRoseMobplayerCollidesWithPlant"
-    }
+    "restrictionBiomes": []
   }
 }

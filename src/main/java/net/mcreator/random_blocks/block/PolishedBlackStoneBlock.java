@@ -24,7 +24,7 @@ public class PolishedBlackStoneBlock extends RandomBlocksModElements.ModElement 
 	@ObjectHolder("random_blocks:polished_black_stone")
 	public static final Block block = null;
 	public PolishedBlackStoneBlock(RandomBlocksModElements instance) {
-		super(instance, 120);
+		super(instance, 16);
 	}
 
 	@Override

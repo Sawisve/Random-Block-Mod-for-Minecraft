@@ -14,7 +14,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class DeleteProcedure extends RandomBlocksModElements.ModElement {
 	public DeleteProcedure(RandomBlocksModElements instance) {
-		super(instance, 86);
+		super(instance, 106);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

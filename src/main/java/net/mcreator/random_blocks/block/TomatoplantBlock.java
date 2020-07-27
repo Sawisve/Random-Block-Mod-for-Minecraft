@@ -55,7 +55,7 @@ public class TomatoplantBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:tomato_plant")
 	public static final Block block = null;
 	public TomatoplantBlock(RandomBlocksModElements instance) {
-		super(instance, 17);
+		super(instance, 23);
 	}
 
 	@Override

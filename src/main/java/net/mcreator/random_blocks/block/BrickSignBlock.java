@@ -41,7 +41,7 @@ public class BrickSignBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:brick_sign")
 	public static final Block block = null;
 	public BrickSignBlock(RandomBlocksModElements instance) {
-		super(instance, 145);
+		super(instance, 32);
 	}
 
 	@Override

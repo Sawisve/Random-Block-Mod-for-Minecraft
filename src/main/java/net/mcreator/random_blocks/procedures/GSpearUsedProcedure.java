@@ -11,7 +11,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class GSpearUsedProcedure extends RandomBlocksModElements.ModElement {
 	public GSpearUsedProcedure(RandomBlocksModElements instance) {
-		super(instance, 166);
+		super(instance, 171);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

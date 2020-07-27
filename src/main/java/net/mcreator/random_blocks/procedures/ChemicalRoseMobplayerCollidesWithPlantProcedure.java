@@ -8,7 +8,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class ChemicalRoseMobplayerCollidesWithPlantProcedure extends RandomBlocksModElements.ModElement {
 	public ChemicalRoseMobplayerCollidesWithPlantProcedure(RandomBlocksModElements instance) {
-		super(instance, 142);
+		super(instance, 154);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -17,7 +17,7 @@ public class NetherItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:nether")
 	public static final Item block = null;
 	public NetherItem(RandomBlocksModElements instance) {
-		super(instance, 33);
+		super(instance, 49);
 	}
 
 	@Override

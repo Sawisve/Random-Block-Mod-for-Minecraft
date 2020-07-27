@@ -34,7 +34,7 @@ public class PBSFBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:pbsf")
 	public static final Block block = null;
 	public PBSFBlock(RandomBlocksModElements instance) {
-		super(instance, 127);
+		super(instance, 19);
 	}
 
 	@Override

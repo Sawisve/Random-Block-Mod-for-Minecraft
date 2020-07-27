@@ -9,7 +9,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class SkyLandsPlayerEntersDimensionProcedure extends RandomBlocksModElements.ModElement {
 	public SkyLandsPlayerEntersDimensionProcedure(RandomBlocksModElements instance) {
-		super(instance, 173);
+		super(instance, 177);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

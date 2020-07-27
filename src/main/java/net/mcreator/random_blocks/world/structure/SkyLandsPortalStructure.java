@@ -33,7 +33,7 @@ import java.util.Random;
 @RandomBlocksModElements.ModElement.Tag
 public class SkyLandsPortalStructure extends RandomBlocksModElements.ModElement {
 	public SkyLandsPortalStructure(RandomBlocksModElements instance) {
-		super(instance, 132);
+		super(instance, 148);
 	}
 
 	@Override

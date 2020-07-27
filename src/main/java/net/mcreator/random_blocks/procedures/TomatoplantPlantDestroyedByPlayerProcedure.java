@@ -13,7 +13,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class TomatoplantPlantDestroyedByPlayerProcedure extends RandomBlocksModElements.ModElement {
 	public TomatoplantPlantDestroyedByPlayerProcedure(RandomBlocksModElements instance) {
-		super(instance, 175);
+		super(instance, 178);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

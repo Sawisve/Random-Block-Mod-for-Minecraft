@@ -9,7 +9,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class CreativOnKeyPressedProcedure extends RandomBlocksModElements.ModElement {
 	public CreativOnKeyPressedProcedure(RandomBlocksModElements instance) {
-		super(instance, 115);
+		super(instance, 134);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

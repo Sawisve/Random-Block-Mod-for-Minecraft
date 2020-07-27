@@ -24,7 +24,7 @@ public class GloveItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:glove")
 	public static final Item block = null;
 	public GloveItem(RandomBlocksModElements instance) {
-		super(instance, 174);
+		super(instance, 63);
 	}
 
 	@Override

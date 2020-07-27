@@ -40,7 +40,7 @@ public class RopeBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:rope")
 	public static final Block block = null;
 	public RopeBlock(RandomBlocksModElements instance) {
-		super(instance, 176);
+		super(instance, 21);
 	}
 
 	@Override

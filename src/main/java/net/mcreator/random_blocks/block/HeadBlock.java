@@ -41,7 +41,7 @@ public class HeadBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:head")
 	public static final Block block = null;
 	public HeadBlock(RandomBlocksModElements instance) {
-		super(instance, 19);
+		super(instance, 25);
 	}
 
 	@Override

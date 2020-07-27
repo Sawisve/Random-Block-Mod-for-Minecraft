@@ -29,7 +29,7 @@ public class SurvivalKeyBinding extends RandomBlocksModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public SurvivalKeyBinding(RandomBlocksModElements instance) {
-		super(instance, 113);
+		super(instance, 132);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

@@ -52,7 +52,7 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:entitybulletiron_spear")
 	public static final EntityType arrow = null;
 	public SpearItem(RandomBlocksModElements instance) {
-		super(instance, 147);
+		super(instance, 36);
 	}
 
 	@Override

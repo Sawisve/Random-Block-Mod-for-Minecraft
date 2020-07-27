@@ -29,7 +29,7 @@ public class AdventureKeyBinding extends RandomBlocksModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public AdventureKeyBinding(RandomBlocksModElements instance) {
-		super(instance, 116);
+		super(instance, 135);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

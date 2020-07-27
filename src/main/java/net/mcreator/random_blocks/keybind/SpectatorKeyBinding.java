@@ -29,7 +29,7 @@ public class SpectatorKeyBinding extends RandomBlocksModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public SpectatorKeyBinding(RandomBlocksModElements instance) {
-		super(instance, 118);
+		super(instance, 137);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

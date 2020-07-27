@@ -17,7 +17,7 @@ public class LivingmiceItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:living_mice")
 	public static final Item block = null;
 	public LivingmiceItem(RandomBlocksModElements instance) {
-		super(instance, 31);
+		super(instance, 47);
 	}
 
 	@Override

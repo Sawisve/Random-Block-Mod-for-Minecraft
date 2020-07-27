@@ -17,7 +17,7 @@ public class EndItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:end")
 	public static final Item block = null;
 	public EndItem(RandomBlocksModElements instance) {
-		super(instance, 32);
+		super(instance, 48);
 	}
 
 	@Override

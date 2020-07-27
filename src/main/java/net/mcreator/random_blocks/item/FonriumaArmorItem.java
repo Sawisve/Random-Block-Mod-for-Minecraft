@@ -34,7 +34,7 @@ public class FonriumaArmorItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:fonriumboots")
 	public static final Item boots = null;
 	public FonriumaArmorItem(RandomBlocksModElements instance) {
-		super(instance, 24);
+		super(instance, 34);
 	}
 
 	@Override

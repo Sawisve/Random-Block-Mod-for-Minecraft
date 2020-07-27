@@ -14,7 +14,7 @@ public class SperItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:sper")
 	public static final Item block = null;
 	public SperItem(RandomBlocksModElements instance) {
-		super(instance, 150);
+		super(instance, 158);
 	}
 
 	@Override

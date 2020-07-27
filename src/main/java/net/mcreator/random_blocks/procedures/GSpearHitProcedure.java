@@ -10,7 +10,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class GSpearHitProcedure extends RandomBlocksModElements.ModElement {
 	public GSpearHitProcedure(RandomBlocksModElements instance) {
-		super(instance, 165);
+		super(instance, 170);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

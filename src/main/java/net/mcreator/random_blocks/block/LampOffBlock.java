@@ -40,7 +40,7 @@ public class LampOffBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:lamp")
 	public static final Block block = null;
 	public LampOffBlock(RandomBlocksModElements instance) {
-		super(instance, 22);
+		super(instance, 28);
 	}
 
 	@Override

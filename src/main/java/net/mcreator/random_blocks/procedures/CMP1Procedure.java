@@ -22,7 +22,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @RandomBlocksModElements.ModElement.Tag
 public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 	public CMP1Procedure(RandomBlocksModElements instance) {
-		super(instance, 140);
+		super(instance, 152);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -21,7 +21,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @RandomBlocksModElements.ModElement.Tag
 public class TrashCommand extends RandomBlocksModElements.ModElement {
 	public TrashCommand(RandomBlocksModElements instance) {
-		super(instance, 106);
+		super(instance, 124);
 	}
 
 	@Override

@@ -34,7 +34,7 @@ import java.util.Random;
 @RandomBlocksModElements.ModElement.Tag
 public class BigHouseStructure extends RandomBlocksModElements.ModElement {
 	public BigHouseStructure(RandomBlocksModElements instance) {
-		super(instance, 143);
+		super(instance, 155);
 	}
 
 	@Override

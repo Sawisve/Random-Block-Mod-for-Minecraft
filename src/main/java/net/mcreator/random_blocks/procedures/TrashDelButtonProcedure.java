@@ -14,7 +14,7 @@ import java.util.Map;
 @RandomBlocksModElements.ModElement.Tag
 public class TrashDelButtonProcedure extends RandomBlocksModElements.ModElement {
 	public TrashDelButtonProcedure(RandomBlocksModElements instance) {
-		super(instance, 108);
+		super(instance, 126);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -23,7 +23,7 @@ public class WhiteBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:white")
 	public static final Block block = null;
 	public WhiteBlock(RandomBlocksModElements instance) {
-		super(instance, 146);
+		super(instance, 20);
 	}
 
 	@Override

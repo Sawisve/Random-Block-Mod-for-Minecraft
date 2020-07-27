@@ -25,7 +25,7 @@ public class DeadleavesBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:dead_leaves")
 	public static final Block block = null;
 	public DeadleavesBlock(RandomBlocksModElements instance) {
-		super(instance, 16);
+		super(instance, 22);
 	}
 
 	@Override

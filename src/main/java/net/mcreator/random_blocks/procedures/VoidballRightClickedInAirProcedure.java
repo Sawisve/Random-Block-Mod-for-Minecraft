@@ -26,7 +26,7 @@ import io.netty.buffer.Unpooled;
 @RandomBlocksModElements.ModElement.Tag
 public class VoidballRightClickedInAirProcedure extends RandomBlocksModElements.ModElement {
 	public VoidballRightClickedInAirProcedure(RandomBlocksModElements instance) {
-		super(instance, 92);
+		super(instance, 111);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

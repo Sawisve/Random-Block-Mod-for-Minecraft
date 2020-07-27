@@ -46,7 +46,7 @@ public class WoodenLadderBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:wooden_ladder")
 	public static final Block block = null;
 	public WoodenLadderBlock(RandomBlocksModElements instance) {
-		super(instance, 20);
+		super(instance, 26);
 	}
 
 	@Override

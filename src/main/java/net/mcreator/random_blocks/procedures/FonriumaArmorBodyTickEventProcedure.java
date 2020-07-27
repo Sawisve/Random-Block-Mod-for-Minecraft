@@ -10,7 +10,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class FonriumaArmorBodyTickEventProcedure extends RandomBlocksModElements.ModElement {
 	public FonriumaArmorBodyTickEventProcedure(RandomBlocksModElements instance) {
-		super(instance, 74);
+		super(instance, 94);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

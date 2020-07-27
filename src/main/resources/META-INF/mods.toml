@@ -9,6 +9,9 @@ credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 authors="Sawisve, MCreator"
+description='''
+Everythings you want...
+'''
 
 [[dependencies.random_blocks]]
     modId="minecraft"

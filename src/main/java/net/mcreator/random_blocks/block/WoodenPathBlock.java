@@ -40,7 +40,7 @@ public class WoodenPathBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:wooden_path")
 	public static final Block block = null;
 	public WoodenPathBlock(RandomBlocksModElements instance) {
-		super(instance, 21);
+		super(instance, 27);
 	}
 
 	@Override

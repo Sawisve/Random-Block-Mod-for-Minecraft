@@ -25,7 +25,7 @@ public class PBSSBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:pbss")
 	public static final Block block = null;
 	public PBSSBlock(RandomBlocksModElements instance) {
-		super(instance, 125);
+		super(instance, 17);
 	}
 
 	@Override

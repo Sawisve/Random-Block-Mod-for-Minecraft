@@ -8,7 +8,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class PoisonedwaterMobplayerCollidesBlockProcedure extends RandomBlocksModElements.ModElement {
 	public PoisonedwaterMobplayerCollidesBlockProcedure(RandomBlocksModElements instance) {
-		super(instance, 75);
+		super(instance, 95);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

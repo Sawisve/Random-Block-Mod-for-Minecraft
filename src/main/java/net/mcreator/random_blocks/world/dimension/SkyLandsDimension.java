@@ -103,7 +103,7 @@ public class SkyLandsDimension extends RandomBlocksModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public SkyLandsDimension(RandomBlocksModElements instance) {
-		super(instance, 43);
+		super(instance, 62);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

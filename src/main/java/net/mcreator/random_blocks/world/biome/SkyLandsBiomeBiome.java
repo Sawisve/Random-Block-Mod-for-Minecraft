@@ -43,7 +43,7 @@ public class SkyLandsBiomeBiome extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:sky_lands_biome")
 	public static final CustomBiome biome = null;
 	public SkyLandsBiomeBiome(RandomBlocksModElements instance) {
-		super(instance, 103);
+		super(instance, 121);
 	}
 
 	@Override

@@ -11,7 +11,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class WSpearUsedProcedure extends RandomBlocksModElements.ModElement {
 	public WSpearUsedProcedure(RandomBlocksModElements instance) {
-		super(instance, 155);
+		super(instance, 162);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

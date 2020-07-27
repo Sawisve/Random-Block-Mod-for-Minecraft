@@ -19,7 +19,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 @RandomBlocksModElements.ModElement.Tag
 public class CMP2Procedure extends RandomBlocksModElements.ModElement {
 	public CMP2Procedure(RandomBlocksModElements instance) {
-		super(instance, 141);
+		super(instance, 153);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

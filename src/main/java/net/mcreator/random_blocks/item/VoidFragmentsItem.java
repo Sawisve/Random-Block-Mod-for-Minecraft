@@ -15,7 +15,7 @@ public class VoidFragmentsItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:void_fragments")
 	public static final Item block = null;
 	public VoidFragmentsItem(RandomBlocksModElements instance) {
-		super(instance, 138);
+		super(instance, 55);
 	}
 
 	@Override

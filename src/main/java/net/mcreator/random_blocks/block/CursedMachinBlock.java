@@ -82,7 +82,7 @@ public class CursedMachinBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:cursed_machine")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CursedMachinBlock(RandomBlocksModElements instance) {
-		super(instance, 139);
+		super(instance, 29);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
