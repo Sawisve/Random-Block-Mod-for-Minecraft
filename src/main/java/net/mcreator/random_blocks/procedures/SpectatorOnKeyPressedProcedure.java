@@ -6,13 +6,15 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+
 @RandomBlocksModElements.ModElement.Tag
 public class SpectatorOnKeyPressedProcedure extends RandomBlocksModElements.ModElement {
 	public SpectatorOnKeyPressedProcedure(RandomBlocksModElements instance) {
-		super(instance, 138);
+		super(instance, 141);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure SpectatorOnKeyPressed!");
 			return;

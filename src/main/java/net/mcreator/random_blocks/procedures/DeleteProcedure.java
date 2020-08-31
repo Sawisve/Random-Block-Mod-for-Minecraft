@@ -3,7 +3,7 @@ package net.mcreator.random_blocks.procedures;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.CapabilityItemHandler;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.ItemStack;
@@ -11,13 +11,15 @@ import net.minecraft.item.ItemStack;
 import net.mcreator.random_blocks.item.VoidFragmentsItem;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+
 @RandomBlocksModElements.ModElement.Tag
 public class DeleteProcedure extends RandomBlocksModElements.ModElement {
 	public DeleteProcedure(RandomBlocksModElements instance) {
-		super(instance, 106);
+		super(instance, 109);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure Delete!");
 			return;
@@ -34,10 +36,10 @@ public class DeleteProcedure extends RandomBlocksModElements.ModElement {
 			System.err.println("Failed to load dependency world for procedure Delete!");
 			return;
 		}
-		int x = (int) dependencies.get("x");
-		int y = (int) dependencies.get("y");
-		int z = (int) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+		IWorld world = (IWorld) dependencies.get("world");
 		{
 			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 			if (_ent != null) {

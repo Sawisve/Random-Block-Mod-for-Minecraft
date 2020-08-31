@@ -17,12 +17,15 @@ import net.minecraft.block.BlockState;
 import net.mcreator.random_blocks.procedures.VoidballRightClickedInAirProcedure;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+import java.util.HashMap;
+
 @RandomBlocksModElements.ModElement.Tag
 public class VoidballItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:voidball")
 	public static final Item block = null;
 	public VoidballItem(RandomBlocksModElements instance) {
-		super(instance, 46);
+		super(instance, 48);
 	}
 
 	@Override
@@ -60,11 +63,11 @@ public class VoidballItem extends RandomBlocksModElements.ModElement {
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
 			ItemStack itemstack = ar.getResult();
-			int x = (int) entity.getPosX();
-			int y = (int) entity.getPosY();
-			int z = (int) entity.getPosZ();
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);

@@ -38,7 +38,9 @@ import net.mcreator.random_blocks.procedures.WoodenLadderUpdateTickProcedure;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
 import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 @RandomBlocksModElements.ModElement.Tag
@@ -46,7 +48,7 @@ public class WoodenLadderBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:wooden_ladder")
 	public static final Block block = null;
 	public WoodenLadderBlock(RandomBlocksModElements instance) {
-		super(instance, 26);
+		super(instance, 27);
 	}
 
 	@Override
@@ -142,7 +144,7 @@ public class WoodenLadderBlock extends RandomBlocksModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

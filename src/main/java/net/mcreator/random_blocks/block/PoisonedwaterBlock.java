@@ -31,17 +31,20 @@ import net.minecraft.block.Block;
 import net.mcreator.random_blocks.procedures.PoisonedwaterMobplayerCollidesBlockProcedure;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+import java.util.HashMap;
+
 @RandomBlocksModElements.ModElement.Tag
 public class PoisonedwaterBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:poisoned_water")
 	public static final FlowingFluidBlock block = null;
 	@ObjectHolder("random_blocks:poisoned_water_bucket")
 	public static final Item bucket = null;
-	private FlowingFluid flowing = null;
-	private FlowingFluid still = null;
+	public static FlowingFluid flowing = null;
+	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public PoisonedwaterBlock(RandomBlocksModElements instance) {
-		super(instance, 41);
+		super(instance, 43);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -73,7 +76,7 @@ public class PoisonedwaterBlock extends RandomBlocksModElements.ModElement {
 				int y = pos.getY();
 				int z = pos.getZ();
 				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
 					PoisonedwaterMobplayerCollidesBlockProcedure.executeProcedure($_dependencies);
 				}

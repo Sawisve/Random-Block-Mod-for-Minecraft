@@ -3,7 +3,7 @@ package net.mcreator.random_blocks.procedures;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.CapabilityItemHandler;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.Items;
@@ -18,14 +18,15 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.Map;
 
 @RandomBlocksModElements.ModElement.Tag
 public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 	public CMP1Procedure(RandomBlocksModElements instance) {
-		super(instance, 152);
+		super(instance, 155);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure CMP1!");
 			return;
@@ -42,10 +43,10 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 			System.err.println("Failed to load dependency world for procedure CMP1!");
 			return;
 		}
-		int x = (int) dependencies.get("x");
-		int y = (int) dependencies.get("y");
-		int z = (int) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+		IWorld world = (IWorld) dependencies.get("world");
 		double PreviousRecipe = 0;
 		PreviousRecipe = (double) (new Object() {
 			public double getValue(BlockPos pos, String tag) {
@@ -115,13 +116,13 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 								return _retval.get();
 							}
 						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (2))) == 0)))) {
-			if (!world.isRemote) {
+			if (!world.getWorld().isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("recipe", 0);
-				world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 		} else if (((((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
@@ -183,13 +184,13 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 								return _retval.get();
 							}
 						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (2))) == 0)))) {
-			if (!world.isRemote) {
+			if (!world.getWorld().isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("recipe", 1);
-				world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 		} else if (((((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
@@ -251,13 +252,13 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 								return _retval.get();
 							}
 						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (2))) == 0)))) {
-			if (!world.isRemote) {
+			if (!world.getWorld().isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("recipe", 2);
-				world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 		} else if (((((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
@@ -319,22 +320,22 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 								return _retval.get();
 							}
 						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (2))) == 0)))) {
-			if (!world.isRemote) {
+			if (!world.getWorld().isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("recipe", 3);
-				world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 		} else {
-			if (!world.isRemote) {
+			if (!world.getWorld().isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("recipe", (-1));
-				world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 		}
 		if (((PreviousRecipe) != (new Object() {
@@ -345,13 +346,13 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 				return -1;
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")))) {
-			if (!world.isRemote) {
+			if (!world.getWorld().isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putDouble("timer", 0);
-				world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 		}
 		if (((new Object() {
@@ -611,13 +612,13 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 						}
 					}
 				}
-				if (!world.isRemote) {
+				if (!world.getWorld().isRemote) {
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					TileEntity _tileEntity = world.getTileEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_tileEntity != null)
 						_tileEntity.getTileData().putDouble("timer", 0);
-					world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+					world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 				}
 			}
 			if (((new Object() {
@@ -689,31 +690,31 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 								});
 							}
 						}
-						if (!world.isRemote) {
+						if (!world.getWorld().isRemote) {
 							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 							TileEntity _tileEntity = world.getTileEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_tileEntity != null)
 								_tileEntity.getTileData().putDouble("fuel", 200);
-							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+							world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 						}
-						if (!world.isRemote) {
+						if (!world.getWorld().isRemote) {
 							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 							TileEntity _tileEntity = world.getTileEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_tileEntity != null)
 								_tileEntity.getTileData().putDouble("maxFuel", 200);
-							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+							world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 						}
 					}
 				} else {
-					if (!world.isRemote) {
+					if (!world.getWorld().isRemote) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 						TileEntity _tileEntity = world.getTileEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_tileEntity != null)
 							_tileEntity.getTileData().putDouble("timer", 0);
-						world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+						world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 					}
 				}
 			}
@@ -726,7 +727,7 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 				return -1;
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuel")) > 0)) {
-			if (!world.isRemote) {
+			if (!world.getWorld().isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
@@ -739,7 +740,7 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 							return -1;
 						}
 					}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuel")) - 1));
-				world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 			if (((new Object() {
 				public double getValue(BlockPos pos, String tag) {
@@ -749,7 +750,7 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 					return -1;
 				}
 			}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) >= 0)) {
-				if (!world.isRemote) {
+				if (!world.getWorld().isRemote) {
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					TileEntity _tileEntity = world.getTileEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
@@ -762,11 +763,11 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 								return -1;
 							}
 						}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) + 1));
-					world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+					world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 				}
 			}
 		}
-		if (!world.isRemote) {
+		if (!world.getWorld().isRemote) {
 			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 			TileEntity _tileEntity = world.getTileEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
@@ -786,7 +787,7 @@ public class CMP1Procedure extends RandomBlocksModElements.ModElement {
 						return -1;
 					}
 				}.getValue(new BlockPos((int) x, (int) y, (int) z), "maxFuel"))) * 100));
-			world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+			world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
 	}
 }

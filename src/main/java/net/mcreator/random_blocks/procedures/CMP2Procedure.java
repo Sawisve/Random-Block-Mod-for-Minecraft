@@ -3,7 +3,7 @@ package net.mcreator.random_blocks.procedures;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -11,18 +11,19 @@ import net.minecraft.util.Direction;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.particles.ParticleTypes;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+
 @RandomBlocksModElements.ModElement.Tag
 public class CMP2Procedure extends RandomBlocksModElements.ModElement {
 	public CMP2Procedure(RandomBlocksModElements instance) {
-		super(instance, 153);
+		super(instance, 156);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure CMP2!");
 			return;
@@ -39,10 +40,10 @@ public class CMP2Procedure extends RandomBlocksModElements.ModElement {
 			System.err.println("Failed to load dependency world for procedure CMP2!");
 			return;
 		}
-		int x = (int) dependencies.get("x");
-		int y = (int) dependencies.get("y");
-		int z = (int) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+		IWorld world = (IWorld) dependencies.get("world");
 		double FireHeight = 0;
 		if (((new Object() {
 			public double getValue(BlockPos pos, String tag) {
@@ -121,9 +122,15 @@ public class CMP2Procedure extends RandomBlocksModElements.ModElement {
 							(FireHeight), (Math.random() * 0.01), (Math.random() * 0.01));
 				}
 			}
-			world.playSound((PlayerEntity) null, x, y, z,
-					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.furnace.fire_crackle")),
-					SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			if (!world.getWorld().isRemote) {
+				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.furnace.fire_crackle")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			} else {
+				world.getWorld().playSound(x, y, z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.furnace.fire_crackle")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+			}
 		}
 	}
 }

@@ -28,7 +28,7 @@ import java.util.Collections;
 
 @RandomBlocksModElements.ModElement.Tag
 public class DeadoakplanksBlock extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:dead_oak_planks")
+	@ObjectHolder("random_blocks:dead_wood_planks")
 	public static final Block block = null;
 	public DeadoakplanksBlock(RandomBlocksModElements instance) {
 		super(instance, 2);
@@ -50,7 +50,7 @@ public class DeadoakplanksBlock extends RandomBlocksModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 1f).lightValue(0).harvestLevel(1)
 					.harvestTool(ToolType.AXE).notSolid());
-			setRegistryName("dead_oak_planks");
+			setRegistryName("dead_wood_planks");
 		}
 
 		@Override

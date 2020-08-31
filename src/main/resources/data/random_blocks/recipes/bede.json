@@ -16,13 +16,13 @@
       "tag": "minecraft:wool"
     },
     "3": {
-      "item": "random_blocks:dead_oak_planks"
+      "item": "random_blocks:dead_wood_planks"
     },
     "4": {
-      "item": "random_blocks:dead_oak_planks"
+      "item": "random_blocks:dead_wood_planks"
     },
     "5": {
-      "item": "random_blocks:dead_oak_planks"
+      "item": "random_blocks:dead_wood_planks"
     }
   },
   "result": {

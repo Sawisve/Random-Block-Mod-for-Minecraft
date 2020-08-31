@@ -8,13 +8,15 @@ import net.minecraft.entity.Entity;
 import net.mcreator.random_blocks.item.DiamondSpearItem;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+
 @RandomBlocksModElements.ModElement.Tag
 public class DSpearUsedProcedure extends RandomBlocksModElements.ModElement {
 	public DSpearUsedProcedure(RandomBlocksModElements instance) {
-		super(instance, 175);
+		super(instance, 178);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure DSpearUsed!");
 			return;

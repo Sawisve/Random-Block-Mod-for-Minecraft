@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "random_blocks:blocks/doorbottom",
+    "top": "random_blocks:blocks/planks_oak_dead"
+  }
+}

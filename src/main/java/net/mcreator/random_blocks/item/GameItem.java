@@ -17,7 +17,7 @@ public class GameItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:game")
 	public static final Item block = null;
 	public GameItem(RandomBlocksModElements instance) {
-		super(instance, 50);
+		super(instance, 52);
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 8,
+  "_fv": 10,
   "_type": "biome",
   "definition": {
     "groundBlock": {
@@ -25,7 +25,6 @@
     "treeFruits": {
       "value": "Blocks.VOID_AIR"
     },
-    "customColors": true,
     "airColor": {
       "value": -6710887,
       "falpha": 0.0
@@ -61,12 +60,24 @@
     "biomeDictionaryTypes": [
       "DEAD"
     ],
-    "spawnList": [
+    "spawnEntries": [
       {
-        "value": "EntitySkeleton"
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 3,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "monster"
       },
       {
-        "value": "EntitySkeletonHorse"
+        "entity": {
+          "value": "EntitySkeletonHorse"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
       }
     ]
   }

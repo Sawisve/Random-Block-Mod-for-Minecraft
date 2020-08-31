@@ -1,5 +1,5 @@
 {
-  "_fv": 8,
+  "_fv": 10,
   "_type": "biome",
   "definition": {
     "groundBlock": {
@@ -25,7 +25,6 @@
     "treeFruits": {
       "value": ""
     },
-    "customColors": true,
     "airColor": {
       "value": -52,
       "falpha": 0.0
@@ -61,12 +60,24 @@
     "biomeDictionaryTypes": [
       "END"
     ],
-    "spawnList": [
+    "spawnEntries": [
       {
-        "value": "EntityEnderman"
+        "entity": {
+          "value": "EntityEnderman"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
       },
       {
-        "value": "EntityVex"
+        "entity": {
+          "value": "EntityVex"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
       }
     ]
   }

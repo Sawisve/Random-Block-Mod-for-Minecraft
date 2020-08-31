@@ -15,7 +15,7 @@ public class ChemicalsItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:chemicals")
 	public static final Item block = null;
 	public ChemicalsItem(RandomBlocksModElements instance) {
-		super(instance, 56);
+		super(instance, 58);
 	}
 
 	@Override

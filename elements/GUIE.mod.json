@@ -1,0 +1,26 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 100,
+    "height": 40,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<energy>",
+          "color": {
+            "value": -10197916,
+            "falpha": 0.0
+          },
+          "name": "<energy>",
+          "x": 386,
+          "y": 230
+        }
+      }
+    ]
+  }
+}

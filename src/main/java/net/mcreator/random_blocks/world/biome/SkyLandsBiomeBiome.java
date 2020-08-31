@@ -43,7 +43,7 @@ public class SkyLandsBiomeBiome extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:sky_lands_biome")
 	public static final CustomBiome biome = null;
 	public SkyLandsBiomeBiome(RandomBlocksModElements instance) {
-		super(instance, 121);
+		super(instance, 124);
 	}
 
 	@Override
@@ -77,8 +77,8 @@ public class SkyLandsBiomeBiome extends RandomBlocksModElements.ModElement {
 									new SimpleBlockStateProvider(Blocks.OAK_LEAVES.getDefaultState()))).baseHeight(20)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.ZOMBIE, 15, 1, 5));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.ZOMBIE, 15, 1, 5));
+			this.addSpawn(EntityClassification.AMBIENT, new Biome.SpawnListEntry(EntityType.ZOMBIE, 15, 1, 15));
+			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.ZOMBIE, 15, 1, 15));
 		}
 
 		@OnlyIn(Dist.CLIENT)

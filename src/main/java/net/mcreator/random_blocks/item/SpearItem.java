@@ -33,8 +33,14 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.client.renderer.entity.SpriteRenderer;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.client.renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.Vector3f;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.IRenderTypeBuffer;
 
 import net.mcreator.random_blocks.procedures.SpearRangedItemUsedProcedure;
 import net.mcreator.random_blocks.procedures.SpearHitProcedureProcedure;
@@ -42,6 +48,11 @@ import net.mcreator.random_blocks.procedures.SpearBulletHitsBlockProcedure;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
+
+import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.mojang.blaze3d.matrix.MatrixStack;
 
 import com.google.common.collect.Multimap;
 
@@ -52,7 +63,7 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:entitybulletiron_spear")
 	public static final EntityType arrow = null;
 	public SpearItem(RandomBlocksModElements instance) {
-		super(instance, 36);
+		super(instance, 37);
 	}
 
 	@Override
@@ -66,8 +77,7 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void init(FMLCommonSetupEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(arrow,
-				renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
+		RenderingRegistry.registerEntityRenderingHandler(arrow, renderManager -> new CustomRender(renderManager));
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
@@ -107,16 +117,18 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entityLiving, int timeLeft) {
 			if (!world.isRemote && entityLiving instanceof ServerPlayerEntity) {
 				ServerPlayerEntity entity = (ServerPlayerEntity) entityLiving;
-				ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 3.4, 1);
-				itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
-				entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
-				int x = (int) entity.getPosX();
-				int y = (int) entity.getPosY();
-				int z = (int) entity.getPosZ();
-				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("entity", entity);
-					SpearRangedItemUsedProcedure.executeProcedure($_dependencies);
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+				if (true) {
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 3.4, 1);
+					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
+					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						SpearRangedItemUsedProcedure.executeProcedure($_dependencies);
+					}
 				}
 			}
 		}
@@ -160,12 +172,12 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 		public void onCollideWithPlayer(PlayerEntity entity) {
 			super.onCollideWithPlayer(entity);
 			Entity sourceentity = this.getShooter();
-			int x = (int) this.getPosX();
-			int y = (int) this.getPosY();
-			int z = (int) this.getPosZ();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
 			World world = this.world;
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -179,12 +191,12 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
 			Entity sourceentity = this.getShooter();
-			int x = (int) this.getPosX();
-			int y = (int) this.getPosY();
-			int z = (int) this.getPosZ();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
 			World world = this.world;
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -196,14 +208,14 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 		@Override
 		public void tick() {
 			super.tick();
-			int x = (int) this.getPosX();
-			int y = (int) this.getPosY();
-			int z = (int) this.getPosZ();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.getShooter();
 			if (this.inGround) {
 				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
@@ -214,6 +226,66 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 			}
 		}
 	}
+
+	public static class CustomRender extends EntityRenderer<ArrowCustomEntity> {
+		private static final ResourceLocation texture = new ResourceLocation("random_blocks:textures/spar.png");
+		public CustomRender(EntityRendererManager renderManager) {
+			super(renderManager);
+		}
+
+		@Override
+		public void render(ArrowCustomEntity entityIn, float entityYaw, float partialTicks, MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn,
+				int packedLightIn) {
+			IVertexBuilder vb = bufferIn.getBuffer(RenderType.getEntityCutout(this.getEntityTexture(entityIn)));
+			matrixStackIn.push();
+			matrixStackIn.rotate(Vector3f.YP.rotationDegrees(MathHelper.lerp(partialTicks, entityIn.prevRotationYaw, entityIn.rotationYaw) - 90));
+			matrixStackIn.rotate(Vector3f.ZP.rotationDegrees(90 + MathHelper.lerp(partialTicks, entityIn.prevRotationPitch, entityIn.rotationPitch)));
+			EntityModel model = new Modelsper();
+			model.render(matrixStackIn, vb, packedLightIn, OverlayTexture.NO_OVERLAY, 1, 1, 1, 0.0625f);
+			matrixStackIn.pop();
+			super.render(entityIn, entityYaw, partialTicks, matrixStackIn, bufferIn, packedLightIn);
+		}
+
+		@Override
+		public ResourceLocation getEntityTexture(ArrowCustomEntity entity) {
+			return texture;
+		}
+	}
+
+	// Made with Blockbench 3.6.5
+	// Exported for Minecraft version 1.15
+	// Paste this class into your mod and generate all required imports
+	public static class Modelsper extends EntityModel<Entity> {
+		private final ModelRenderer spar;
+		public Modelsper() {
+			textureWidth = 16;
+			textureHeight = 16;
+			spar = new ModelRenderer(this);
+			spar.setRotationPoint(0.0F, 13.0F, 0.0F);
+			setRotationAngle(spar, 0.0F, 1.5708F, 0.0F);
+			spar.setTextureOffset(5, 0).addBox(-1.5F, -2.5F, -5.0F, 2.0F, 6.0F, 1.0F, 0.0F, true);
+			spar.setTextureOffset(5, 0).addBox(-1.3F, -1.5F, -7.0F, 1.0F, 4.0F, 2.0F, 0.0F, true);
+			spar.setTextureOffset(5, 0).addBox(-1.0F, -0.5F, -8.0F, 1.0F, 2.0F, 1.0F, 0.0F, true);
+			spar.setTextureOffset(0, 0).addBox(-1.5F, -0.5F, -4.0F, 2.0F, 2.0F, 12.0F, 0.0F, true);
+		}
+
+		@Override
+		public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+			// previously the render function, render code was moved to a method below
+		}
+
+		@Override
+		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
+				float alpha) {
+			spar.render(matrixStack, buffer, packedLight, packedOverlay);
+		}
+
+		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+			modelRenderer.rotateAngleX = x;
+			modelRenderer.rotateAngleY = y;
+			modelRenderer.rotateAngleZ = z;
+		}
+	}
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
@@ -222,9 +294,9 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
 		world.addEntity(entityarrow);
-		int x = (int) entity.getPosX();
-		int y = (int) entity.getPosY();
-		int z = (int) entity.getPosZ();
+		double x = entity.getPosX();
+		double y = entity.getPosY();
+		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.throw")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
@@ -236,13 +308,15 @@ public class SpearItem extends RandomBlocksModElements.ModElement {
 		double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
+		entityarrow.setDamage(3.4);
+		entityarrow.setKnockbackStrength(1);
 		entityarrow.setIsCritical(false);
 		entity.world.addEntity(entityarrow);
-		int x = (int) entity.getPosX();
-		int y = (int) entity.getPosY();
-		int z = (int) entity.getPosZ();
+		double x = entity.getPosX();
+		double y = entity.getPosY();
+		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.throw")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));

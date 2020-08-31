@@ -1,5 +1,5 @@
 {
-  "_fv": 8,
+  "_fv": 10,
   "_type": "biome",
   "definition": {
     "groundBlock": {
@@ -25,7 +25,6 @@
     "treeFruits": {
       "value": "Blocks.AIR"
     },
-    "customColors": true,
     "airColor": {
       "value": -6369537,
       "falpha": 0.0
@@ -61,12 +60,24 @@
     "biomeDictionaryTypes": [
       "PLAINS"
     ],
-    "spawnList": [
+    "spawnEntries": [
       {
-        "value": "EntityAmbientCreature"
+        "entity": {
+          "value": "EntityAmbientCreature"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "ambient"
       },
       {
-        "value": "EntityMonster"
+        "entity": {
+          "value": "EntityMonster"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "monster"
       }
     ]
   }

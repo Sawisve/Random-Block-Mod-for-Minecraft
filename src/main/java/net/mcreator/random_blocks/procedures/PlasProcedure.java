@@ -7,13 +7,15 @@ import net.minecraft.entity.Entity;
 import net.mcreator.random_blocks.item.FonriumaArmorItem;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+
 @RandomBlocksModElements.ModElement.Tag
 public class PlasProcedure extends RandomBlocksModElements.ModElement {
 	public PlasProcedure(RandomBlocksModElements instance) {
-		super(instance, 103);
+		super(instance, 106);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure Plas!");
 			return;

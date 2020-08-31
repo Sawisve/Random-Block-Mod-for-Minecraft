@@ -70,7 +70,9 @@ import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
@@ -82,7 +84,7 @@ public class CursedMachinBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:cursed_machine")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CursedMachinBlock(RandomBlocksModElements instance) {
-		super(instance, 29);
+		super(instance, 30);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -157,7 +159,7 @@ public class CursedMachinBlock extends RandomBlocksModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -176,7 +178,7 @@ public class CursedMachinBlock extends RandomBlocksModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

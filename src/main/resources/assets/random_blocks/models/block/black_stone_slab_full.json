@@ -1,7 +1,8 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_bottom_top",
   "textures": {
-    "all": "random_blocks:blocks/table_top",
-    "particle": "random_blocks:blocks/table_top"
+    "bottom": "random_blocks:blocks/table_top",
+    "top": "random_blocks:blocks/table_top",
+    "side": "random_blocks:blocks/bss"
   }
 }

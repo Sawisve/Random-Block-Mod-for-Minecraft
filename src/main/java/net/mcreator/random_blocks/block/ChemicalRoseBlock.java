@@ -48,7 +48,7 @@ public class ChemicalRoseBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:chemical_rose")
 	public static final Block block = null;
 	public ChemicalRoseBlock(RandomBlocksModElements instance) {
-		super(instance, 30);
+		super(instance, 31);
 	}
 
 	@Override

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "random_blocks:block/polished_black_stone_slab"
+    },
+    "type=top": {
+      "model": "random_blocks:block/polished_black_stone_slab_top"
+    },
+    "type=double": {
+      "model": "random_blocks:block/polished_black_stone_slab_full"
+    }
+  }
+}

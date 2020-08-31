@@ -21,16 +21,16 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 
 @RandomBlocksModElements.ModElement.Tag
 public class Wooden_armorArmorItem extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:woodenhelmet")
+	@ObjectHolder("random_blocks:wooden_helmet")
 	public static final Item helmet = null;
-	@ObjectHolder("random_blocks:woodenbody")
+	@ObjectHolder("random_blocks:wooden_chestplate")
 	public static final Item body = null;
-	@ObjectHolder("random_blocks:woodenlegs")
+	@ObjectHolder("random_blocks:wooden_leggings")
 	public static final Item legs = null;
-	@ObjectHolder("random_blocks:woodenboots")
+	@ObjectHolder("random_blocks:wooden_boots")
 	public static final Item boots = null;
 	public Wooden_armorArmorItem(RandomBlocksModElements instance) {
-		super(instance, 35);
+		super(instance, 42);
 	}
 
 	@Override
@@ -70,24 +70,24 @@ public class Wooden_armorArmorItem extends RandomBlocksModElements.ModElement {
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "random_blocks:textures/models/armor/wooden_armor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("woodenhelmet"));
+		}.setRegistryName("wooden_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "random_blocks:textures/models/armor/wooden_armor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("woodenbody"));
+		}.setRegistryName("wooden_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "random_blocks:textures/models/armor/wooden_armor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("woodenlegs"));
+		}.setRegistryName("wooden_leggings"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "random_blocks:textures/models/armor/wooden_armor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("woodenboots"));
+		}.setRegistryName("wooden_boots"));
 	}
 }

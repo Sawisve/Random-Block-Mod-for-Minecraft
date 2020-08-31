@@ -32,7 +32,9 @@ import net.minecraft.block.Block;
 import net.mcreator.random_blocks.procedures.LamplitOnBlockRightClickedProcedure;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 @RandomBlocksModElements.ModElement.Tag
@@ -40,7 +42,7 @@ public class LampBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:lamp_lit")
 	public static final Block block = null;
 	public LampBlock(RandomBlocksModElements instance) {
-		super(instance, 128);
+		super(instance, 131);
 	}
 
 	@Override
@@ -97,7 +99,7 @@ public class LampBlock extends RandomBlocksModElements.ModElement {
 			int z = pos.getZ();
 			Direction direction = hit.getFace();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

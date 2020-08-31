@@ -12,10 +12,10 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 
 @RandomBlocksModElements.ModElement.Tag
 public class VoidFragmentsItem extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:void_fragments")
+	@ObjectHolder("random_blocks:void_fragment")
 	public static final Item block = null;
 	public VoidFragmentsItem(RandomBlocksModElements instance) {
-		super(instance, 55);
+		super(instance, 57);
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class VoidFragmentsItem extends RandomBlocksModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64));
-			setRegistryName("void_fragments");
+			setRegistryName("void_fragment");
 		}
 
 		@Override

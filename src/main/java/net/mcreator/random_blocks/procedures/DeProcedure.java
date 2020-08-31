@@ -14,10 +14,10 @@ import java.util.Map;
 @RandomBlocksModElements.ModElement.Tag
 public class DeProcedure extends RandomBlocksModElements.ModElement {
 	public DeProcedure(RandomBlocksModElements instance) {
-		super(instance, 112);
+		super(instance, 115);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure De!");
 			return;

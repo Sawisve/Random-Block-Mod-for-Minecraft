@@ -22,7 +22,7 @@ import java.util.Collections;
 
 @RandomBlocksModElements.ModElement.Tag
 public class PBSSBlock extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:pbss")
+	@ObjectHolder("random_blocks:polished_black_stone_stairs")
 	public static final Block block = null;
 	public PBSSBlock(RandomBlocksModElements instance) {
 		super(instance, 17);
@@ -38,7 +38,7 @@ public class PBSSBlock extends RandomBlocksModElements.ModElement {
 		public CustomBlock() {
 			super(new Block(Block.Properties.create(Material.ROCK)).getDefaultState(), Block.Properties.create(Material.ROCK).sound(SoundType.STONE)
 					.hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(1).harvestTool(ToolType.PICKAXE));
-			setRegistryName("pbss");
+			setRegistryName("polished_black_stone_stairs");
 		}
 
 		@Override

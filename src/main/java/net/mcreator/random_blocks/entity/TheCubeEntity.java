@@ -2,6 +2,7 @@
 package net.mcreator.random_blocks.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -16,6 +17,7 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
@@ -46,6 +48,9 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.mcreator.random_blocks.procedures.TheCubeThisEntityKillsAnotherOneProcedure;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
@@ -53,18 +58,17 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class TheCubeEntity extends RandomBlocksModElements.ModElement {
 	public static EntityType entity = null;
 	public TheCubeEntity(RandomBlocksModElements instance) {
-		super(instance, 42);
+		super(instance, 44);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(1f, 1f)).build("the_cube")
-						.setRegistryName("the_cube");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(1f, 1f)).build("cube")
+						.setRegistryName("cube");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -4549024, -8421505, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("the_cube"));
+		elements.items.add(() -> new SpawnEggItem(entity, -4549024, -8421505, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("cube"));
 	}
 
 	@Override
@@ -105,6 +109,11 @@ public class TheCubeEntity extends RandomBlocksModElements.ModElement {
 		}
 
 		@Override
+		public IPacket<?> createSpawnPacket() {
+			return NetworkHooks.getEntitySpawningPacket(this);
+		}
+
+		@Override
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
@@ -131,11 +140,6 @@ public class TheCubeEntity extends RandomBlocksModElements.ModElement {
 		}
 
 		@Override
-		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
-		}
-
-		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.stone.hit"));
 		}
@@ -143,11 +147,6 @@ public class TheCubeEntity extends RandomBlocksModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.stone.break"));
-		}
-
-		@Override
-		protected float getSoundVolume() {
-			return 1.0F;
 		}
 
 		@Override
@@ -166,12 +165,12 @@ public class TheCubeEntity extends RandomBlocksModElements.ModElement {
 		@Override
 		public void onKillEntity(LivingEntity entity) {
 			super.onKillEntity(entity);
-			int x = (int) this.getPosX();
-			int y = (int) this.getPosY();
-			int z = (int) this.getPosZ();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
 			Entity sourceentity = this;
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				TheCubeThisEntityKillsAnotherOneProcedure.executeProcedure($_dependencies);
 			}

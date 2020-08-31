@@ -23,18 +23,21 @@ import net.mcreator.random_blocks.procedures.FonriumHelmetTickEventProcedure;
 import net.mcreator.random_blocks.procedures.FonriumBootsTickEventProcedure;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+import java.util.HashMap;
+
 @RandomBlocksModElements.ModElement.Tag
 public class FonriumaArmorItem extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:fonriumhelmet")
+	@ObjectHolder("random_blocks:fonrium_helmet")
 	public static final Item helmet = null;
-	@ObjectHolder("random_blocks:fonriumbody")
+	@ObjectHolder("random_blocks:fonrium_chestplate")
 	public static final Item body = null;
-	@ObjectHolder("random_blocks:fonriumlegs")
+	@ObjectHolder("random_blocks:fonrium_leggings")
 	public static final Item legs = null;
-	@ObjectHolder("random_blocks:fonriumboots")
+	@ObjectHolder("random_blocks:fonrium_boots")
 	public static final Item boots = null;
 	public FonriumaArmorItem(RandomBlocksModElements instance) {
-		super(instance, 34);
+		super(instance, 36);
 	}
 
 	@Override
@@ -78,16 +81,16 @@ public class FonriumaArmorItem extends RandomBlocksModElements.ModElement {
 			@Override
 			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
 				super.onArmorTick(itemstack, world, entity);
-				int x = (int) entity.getPosX();
-				int y = (int) entity.getPosY();
-				int z = (int) entity.getPosZ();
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
 				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
 					FonriumHelmetTickEventProcedure.executeProcedure($_dependencies);
 				}
 			}
-		}.setRegistryName("fonriumhelmet"));
+		}.setRegistryName("fonrium_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
@@ -96,22 +99,22 @@ public class FonriumaArmorItem extends RandomBlocksModElements.ModElement {
 
 			@Override
 			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
-				int x = (int) entity.getPosX();
-				int y = (int) entity.getPosY();
-				int z = (int) entity.getPosZ();
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
 				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
 					FonriumaArmorBodyTickEventProcedure.executeProcedure($_dependencies);
 				}
 			}
-		}.setRegistryName("fonriumbody"));
+		}.setRegistryName("fonrium_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "random_blocks:textures/models/armor/fonriuma_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("fonriumlegs"));
+		}.setRegistryName("fonrium_leggings"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
@@ -120,15 +123,15 @@ public class FonriumaArmorItem extends RandomBlocksModElements.ModElement {
 
 			@Override
 			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
-				int x = (int) entity.getPosX();
-				int y = (int) entity.getPosY();
-				int z = (int) entity.getPosZ();
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
 				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
 					FonriumBootsTickEventProcedure.executeProcedure($_dependencies);
 				}
 			}
-		}.setRegistryName("fonriumboots"));
+		}.setRegistryName("fonrium_boots"));
 	}
 }

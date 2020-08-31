@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_3": "iron_chest_1",
+        "m_2": "iron_chest_2",
+        "m_1": "iron_chest_3",
+        "m_0": "iron_chest_4"
+      },
+      "name": "default"
+    }
+  }
+}

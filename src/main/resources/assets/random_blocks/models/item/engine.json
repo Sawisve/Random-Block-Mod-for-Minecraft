@@ -1,5 +1,5 @@
 {
-  "parent": "random_blocks:block/dead_oak_log",
+  "parent": "random_blocks:block/engine",
   "display": {
     "thirdperson": {
       "rotation": [

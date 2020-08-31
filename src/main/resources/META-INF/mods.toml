@@ -8,7 +8,7 @@ displayName="Random Blocks"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
-authors="Sawisve, MCreator"
+authors="S, MCreator"
 description='''
 Everythings you want...
 '''
@@ -19,6 +19,7 @@ Everythings you want...
     versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"
+
 
 
 

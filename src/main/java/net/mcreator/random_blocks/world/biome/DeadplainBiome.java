@@ -49,7 +49,7 @@ public class DeadplainBiome extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:dead_plains")
 	public static final CustomBiome biome = null;
 	public DeadplainBiome(RandomBlocksModElements instance) {
-		super(instance, 66);
+		super(instance, 69);
 	}
 
 	@Override
@@ -87,8 +87,8 @@ public class DeadplainBiome extends RandomBlocksModElements.ModElement {
 							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
 									Lists.newArrayList(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.DIRT.getDefaultState())))
 							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(1))));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SKELETON, 15, 1, 5));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SKELETON_HORSE, 15, 1, 5));
+			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.SKELETON, 15, 3, 15));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SKELETON_HORSE, 15, 1, 15));
 		}
 
 		@OnlyIn(Dist.CLIENT)

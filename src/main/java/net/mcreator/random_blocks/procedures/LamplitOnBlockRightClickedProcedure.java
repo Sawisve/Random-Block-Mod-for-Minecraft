@@ -1,19 +1,21 @@
 package net.mcreator.random_blocks.procedures;
 
-import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.random_blocks.block.LampOffBlock;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
+import java.util.Map;
+
 @RandomBlocksModElements.ModElement.Tag
 public class LamplitOnBlockRightClickedProcedure extends RandomBlocksModElements.ModElement {
 	public LamplitOnBlockRightClickedProcedure(RandomBlocksModElements instance) {
-		super(instance, 130);
+		super(instance, 133);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure LamplitOnBlockRightClicked!");
 			return;
@@ -30,10 +32,10 @@ public class LamplitOnBlockRightClickedProcedure extends RandomBlocksModElements
 			System.err.println("Failed to load dependency world for procedure LamplitOnBlockRightClicked!");
 			return;
 		}
-		int x = (int) dependencies.get("x");
-		int y = (int) dependencies.get("y");
-		int z = (int) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+		IWorld world = (IWorld) dependencies.get("world");
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), LampOffBlock.block.getDefaultState(), 3);
 	}

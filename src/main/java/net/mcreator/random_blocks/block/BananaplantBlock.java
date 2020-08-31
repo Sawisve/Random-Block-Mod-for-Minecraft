@@ -50,7 +50,7 @@ public class BananaplantBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:bananaplant")
 	public static final Block block = null;
 	public BananaplantBlock(RandomBlocksModElements instance) {
-		super(instance, 24);
+		super(instance, 25);
 	}
 
 	@Override

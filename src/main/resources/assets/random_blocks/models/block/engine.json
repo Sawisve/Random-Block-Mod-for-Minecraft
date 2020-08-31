@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "random_blocks:blocks/etbt",
+    "up": "random_blocks:blocks/etbt",
+    "north": "random_blocks:blocks/ets",
+    "east": "random_blocks:blocks/ets",
+    "south": "random_blocks:blocks/ets",
+    "west": "random_blocks:blocks/ets",
+    "particle": "random_blocks:blocks/etbt"
+  }
+}

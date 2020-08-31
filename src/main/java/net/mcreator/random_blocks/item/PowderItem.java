@@ -15,7 +15,7 @@ public class PowderItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:powder")
 	public static final Item block = null;
 	public PowderItem(RandomBlocksModElements instance) {
-		super(instance, 54);
+		super(instance, 56);
 	}
 
 	@Override

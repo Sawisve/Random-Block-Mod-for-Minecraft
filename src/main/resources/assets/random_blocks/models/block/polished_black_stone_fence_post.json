@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "random_blocks:blocks/pbs",
+    "particle": "random_blocks:blocks/pbs"
+  }
+}

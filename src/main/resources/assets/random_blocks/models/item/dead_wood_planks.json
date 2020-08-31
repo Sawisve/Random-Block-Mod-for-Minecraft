@@ -1,5 +1,5 @@
 {
-  "parent": "random_blocks:block/dead_oak_stairs",
+  "parent": "random_blocks:block/dead_wood_planks",
   "display": {
     "thirdperson": {
       "rotation": [

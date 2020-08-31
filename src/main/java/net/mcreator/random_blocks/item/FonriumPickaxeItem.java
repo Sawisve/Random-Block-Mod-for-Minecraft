@@ -17,7 +17,7 @@ public class FonriumPickaxeItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:fonrium_pickaxe")
 	public static final Item block = null;
 	public FonriumPickaxeItem(RandomBlocksModElements instance) {
-		super(instance, 57);
+		super(instance, 59);
 	}
 
 	@Override

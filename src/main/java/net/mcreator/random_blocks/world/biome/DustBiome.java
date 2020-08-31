@@ -22,7 +22,7 @@ public class DustBiome extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:dust")
 	public static final CustomBiome biome = null;
 	public DustBiome(RandomBlocksModElements instance) {
-		super(instance, 99);
+		super(instance, 102);
 	}
 
 	@Override
@@ -45,8 +45,8 @@ public class DustBiome extends RandomBlocksModElements.ModElement {
 			DefaultBiomeFeatures.addStructures(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addOres(this);
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.ENDERMAN, 15, 1, 5));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.VEX, 15, 1, 5));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.ENDERMAN, 15, 1, 15));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.VEX, 15, 1, 15));
 		}
 
 		@OnlyIn(Dist.CLIENT)

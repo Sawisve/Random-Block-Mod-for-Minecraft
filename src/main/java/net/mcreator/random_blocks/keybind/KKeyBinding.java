@@ -23,13 +23,15 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 import net.mcreator.random_blocks.RandomBlocksMod;
 
 import java.util.function.Supplier;
+import java.util.Map;
+import java.util.HashMap;
 
 @RandomBlocksModElements.ModElement.Tag
 public class KKeyBinding extends RandomBlocksModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public KKeyBinding(RandomBlocksModElements instance) {
-		super(instance, 119);
+		super(instance, 122);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}
@@ -81,17 +83,16 @@ public class KKeyBinding extends RandomBlocksModElements.ModElement {
 	}
 	private static void pressAction(PlayerEntity entity, int type, int pressedms) {
 		World world = entity.world;
-		int x = (int) entity.getPosX();
-		int y = (int) entity.getPosY();
-		int z = (int) entity.getPosZ();
+		double x = entity.getPosX();
+		double y = entity.getPosY();
+		double z = entity.getPosZ();
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
 		if (type == 0) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				OnKeykPressedProcedure.executeProcedure($_dependencies);
 			}
 		}

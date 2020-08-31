@@ -24,7 +24,7 @@ public class GloveItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:glove")
 	public static final Item block = null;
 	public GloveItem(RandomBlocksModElements instance) {
-		super(instance, 63);
+		super(instance, 65);
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class GloveItem extends RandomBlocksModElements.ModElement {
 		public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
 			if (blockstate.getBlock() == TomatoplantBlock.block.getDefaultState().getBlock())
 				return 1f;
-			return 0;
+			return 1;
 		}
 
 		@Override

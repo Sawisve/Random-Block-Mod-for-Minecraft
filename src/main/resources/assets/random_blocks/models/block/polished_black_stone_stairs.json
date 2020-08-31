@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "random_blocks:blocks/pbs",
+    "top": "random_blocks:blocks/pbs",
+    "side": "random_blocks:blocks/pbs"
+  }
+}

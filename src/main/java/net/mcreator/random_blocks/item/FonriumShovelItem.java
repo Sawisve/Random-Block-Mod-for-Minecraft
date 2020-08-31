@@ -16,7 +16,7 @@ public class FonriumShovelItem extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:fonrium_shovel")
 	public static final Item block = null;
 	public FonriumShovelItem(RandomBlocksModElements instance) {
-		super(instance, 59);
+		super(instance, 61);
 	}
 
 	@Override

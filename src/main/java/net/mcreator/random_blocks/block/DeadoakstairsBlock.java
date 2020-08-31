@@ -29,7 +29,7 @@ import java.util.Collections;
 
 @RandomBlocksModElements.ModElement.Tag
 public class DeadoakstairsBlock extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:dead_oak_stairs")
+	@ObjectHolder("random_blocks:dead_wood_stairs")
 	public static final Block block = null;
 	public DeadoakstairsBlock(RandomBlocksModElements instance) {
 		super(instance, 3);
@@ -51,7 +51,7 @@ public class DeadoakstairsBlock extends RandomBlocksModElements.ModElement {
 		public CustomBlock() {
 			super(new Block(Block.Properties.create(Material.ROCK)).getDefaultState(), Block.Properties.create(Material.WOOD).sound(SoundType.WOOD)
 					.hardnessAndResistance(1f, 1f).lightValue(0).harvestLevel(1).harvestTool(ToolType.AXE).notSolid());
-			setRegistryName("dead_oak_stairs");
+			setRegistryName("dead_wood_stairs");
 		}
 
 		@Override

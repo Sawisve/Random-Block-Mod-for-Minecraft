@@ -41,7 +41,7 @@ public class CobblestoneSignBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:cobblestone_sign")
 	public static final Block block = null;
 	public CobblestoneSignBlock(RandomBlocksModElements instance) {
-		super(instance, 31);
+		super(instance, 32);
 	}
 
 	@Override

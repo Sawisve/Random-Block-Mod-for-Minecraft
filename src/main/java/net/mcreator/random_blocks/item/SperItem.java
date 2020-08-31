@@ -11,10 +11,10 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 
 @RandomBlocksModElements.ModElement.Tag
 public class SperItem extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:sper")
+	@ObjectHolder("random_blocks:spear_bullet")
 	public static final Item block = null;
 	public SperItem(RandomBlocksModElements instance) {
-		super(instance, 158);
+		super(instance, 161);
 	}
 
 	@Override
@@ -24,7 +24,7 @@ public class SperItem extends RandomBlocksModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(null).maxStackSize(64));
-			setRegistryName("sper");
+			setRegistryName("spear_bullet");
 		}
 
 		@Override

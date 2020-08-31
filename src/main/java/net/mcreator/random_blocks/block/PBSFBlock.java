@@ -31,7 +31,7 @@ import java.util.Collections;
 
 @RandomBlocksModElements.ModElement.Tag
 public class PBSFBlock extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:pbsf")
+	@ObjectHolder("random_blocks:polished_black_stone_fence")
 	public static final Block block = null;
 	public PBSFBlock(RandomBlocksModElements instance) {
 		super(instance, 19);
@@ -53,7 +53,7 @@ public class PBSFBlock extends RandomBlocksModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE).notSolid());
-			setRegistryName("pbsf");
+			setRegistryName("polished_black_stone_fence");
 		}
 
 		@Override

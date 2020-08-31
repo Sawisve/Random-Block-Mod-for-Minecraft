@@ -47,7 +47,9 @@ import net.mcreator.random_blocks.procedures.TomatoplantPlantDestroyedByPlayerPr
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
 import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 @RandomBlocksModElements.ModElement.Tag
@@ -55,7 +57,7 @@ public class TomatoplantBlock extends RandomBlocksModElements.ModElement {
 	@ObjectHolder("random_blocks:tomato_plant")
 	public static final Block block = null;
 	public TomatoplantBlock(RandomBlocksModElements instance) {
-		super(instance, 23);
+		super(instance, 24);
 	}
 
 	@Override
@@ -137,7 +139,7 @@ public class TomatoplantBlock extends RandomBlocksModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);

@@ -8,26 +8,26 @@
   ],
   "key": {
     "0": {
-      "item": "random_blocks:dead_oak_planks"
+      "item": "random_blocks:dead_wood_planks"
     },
     "3": {
-      "item": "random_blocks:dead_oak_planks"
+      "item": "random_blocks:dead_wood_planks"
     },
     "4": {
-      "item": "random_blocks:dead_oak_planks"
+      "item": "random_blocks:dead_wood_planks"
     },
     "6": {
-      "item": "random_blocks:dead_oak_planks"
+      "item": "random_blocks:dead_wood_planks"
     },
     "7": {
-      "item": "random_blocks:dead_oak_planks"
+      "item": "random_blocks:dead_wood_planks"
     },
     "8": {
-      "item": "random_blocks:dead_oak_planks"
+      "item": "random_blocks:dead_wood_planks"
     }
   },
   "result": {
-    "item": "random_blocks:dead_oak_stairs",
+    "item": "random_blocks:dead_wood_stairs",
     "count": 4
   }
 }
