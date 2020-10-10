@@ -57,7 +57,7 @@ public class DrillEnchantmentEffectProcedure extends RandomBlocksModElements.Mod
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((EnchantmentHelper.getEnchantmentLevel(DrillEnchantment.enchantment,
 				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) > 0)
-				&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.STONE.getDefaultState().getBlock()))) {
+				&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.IRON_ORE.getDefaultState().getBlock()))) {
 			if (dependencies.get("event") != null) {
 				Object _obj = dependencies.get("event");
 				if (_obj instanceof Event) {
@@ -67,16 +67,25 @@ public class DrillEnchantmentEffectProcedure extends RandomBlocksModElements.Mod
 				}
 			}
 			if (!world.getWorld().isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Blocks.STONE, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, (world.getWorld().getRecipeManager()
+						.getRecipe(IRecipeType.SMELTING,
+								new Inventory((new ItemStack((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))),
+								world.getWorld())
+						.isPresent()
+								? world.getWorld().getRecipeManager()
+										.getRecipe(IRecipeType.SMELTING,
+												new Inventory(
+														(new ItemStack((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))),
+												world.getWorld())
+										.get().getRecipeOutput().copy()
+								: ItemStack.EMPTY));
 				entityToSpawn.setPickupDelay(10);
 				world.addEntity(entityToSpawn);
 			}
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 		} else if ((((EnchantmentHelper.getEnchantmentLevel(DrillEnchantment.enchantment,
 				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) > 0)
-				&& (world.getWorld().getRecipeManager().getRecipe(IRecipeType.SMELTING,
-						new Inventory((new ItemStack((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))), world.getWorld())
-						.isPresent()))) {
+				&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GOLD_ORE.getDefaultState().getBlock()))) {
 			if (dependencies.get("event") != null) {
 				Object _obj = dependencies.get("event");
 				if (_obj instanceof Event) {

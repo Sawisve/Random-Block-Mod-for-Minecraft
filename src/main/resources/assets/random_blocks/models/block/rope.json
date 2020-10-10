@@ -1,9 +1,0 @@
-{
-  "parent": "random_blocks:custom/rope",
-  "textures": {
-    "all": "random_blocks:blocks/rope1",
-    "particle": "random_blocks:blocks/rope1",
-    "0": "random_blocks:blocks/rope1",
-    "1": "random_blocks:blocks/rope2"
-  }
-}
