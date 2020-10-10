@@ -13,9 +13,6 @@
     "onHelmetTick": {
       "name": "FonriumHelmetTickEvent"
     },
-    "onBodyTick": {
-      "name": "FonriumaArmorBodyTickEvent"
-    },
     "onBootsTick": {
       "name": "FonriumBootsTickEvent"
     },

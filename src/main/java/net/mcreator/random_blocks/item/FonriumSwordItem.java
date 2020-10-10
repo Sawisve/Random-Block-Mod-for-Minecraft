@@ -32,7 +32,7 @@ public class FonriumSwordItem extends RandomBlocksModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 38f;
+				return 8f;
 			}
 
 			public int getHarvestLevel() {

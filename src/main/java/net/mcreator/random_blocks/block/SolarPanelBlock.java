@@ -15,6 +15,7 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
@@ -49,25 +50,29 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.random_blocks.procedures.SolarPanelUpdateTickProcedure;
 import net.mcreator.random_blocks.gui.GUIEGui;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
+import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
 @RandomBlocksModElements.ModElement.Tag
-public class BatteryBlock extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:battery")
+public class SolarPanelBlock extends RandomBlocksModElements.ModElement {
+	@ObjectHolder("random_blocks:solar_panel")
 	public static final Block block = null;
-	@ObjectHolder("random_blocks:battery")
+	@ObjectHolder("random_blocks:solar_panel")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public BatteryBlock(RandomBlocksModElements instance) {
-		super(instance, 198);
+	public SolarPanelBlock(RandomBlocksModElements instance) {
+		super(instance, 203);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -80,12 +85,12 @@ public class BatteryBlock extends RandomBlocksModElements.ModElement {
 
 	@SubscribeEvent
 	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("battery"));
+		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("solar_panel"));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("battery");
+			setRegistryName("solar_panel");
 		}
 
 		@Override
@@ -94,6 +99,32 @@ public class BatteryBlock extends RandomBlocksModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@Override
+		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(state, world, pos, oldState, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
+		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+			super.tick(state, world, pos, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SolarPanelUpdateTickProcedure.executeProcedure($_dependencies);
+			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
 
 		@Override
@@ -107,7 +138,7 @@ public class BatteryBlock extends RandomBlocksModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Battery");
+						return new StringTextComponent("Solar Panel");
 					}
 
 					@Override
@@ -226,7 +257,7 @@ public class BatteryBlock extends RandomBlocksModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("battery");
+			return new StringTextComponent("solar_panel");
 		}
 
 		@Override
@@ -241,7 +272,7 @@ public class BatteryBlock extends RandomBlocksModElements.ModElement {
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Battery");
+			return new StringTextComponent("Solar Panel");
 		}
 
 		@Override
@@ -274,7 +305,7 @@ public class BatteryBlock extends RandomBlocksModElements.ModElement {
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		private final EnergyStorage energyStorage = new EnergyStorage(10000, 200, 200, 10000) {
+		private final EnergyStorage energyStorage = new EnergyStorage(400000, 200, 200, 0) {
 			@Override
 			public int receiveEnergy(int maxReceive, boolean simulate) {
 				int retval = super.receiveEnergy(maxReceive, simulate);

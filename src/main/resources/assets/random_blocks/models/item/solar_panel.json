@@ -1,5 +1,5 @@
 {
-  "parent": "random_blocks:block/brick_sign",
+  "parent": "random_blocks:block/solar_panel",
   "display": {
     "thirdperson": {
       "rotation": [

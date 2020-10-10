@@ -2,9 +2,9 @@
   "_fv": 10,
   "_type": "structure",
   "definition": {
-    "structure": "big_house",
+    "structure": "old_tower",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First block",
+    "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 2000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
@@ -13,16 +13,12 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBlocks": [
-      {
-        "value": "Blocks.GRASS"
-      }
-    ],
+    "restrictionBlocks": [],
     "restrictionBiomes": [
       {
         "value": "plains"
       }
     ],
-    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }
