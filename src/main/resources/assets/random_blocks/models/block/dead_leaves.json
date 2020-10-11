@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "random_blocks:blocks/dead_leaves",
-    "particle": "random_blocks:blocks/dead_leaves"
-  }
-}

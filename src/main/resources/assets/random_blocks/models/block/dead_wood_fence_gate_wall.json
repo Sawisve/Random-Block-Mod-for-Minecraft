@@ -1,6 +1,0 @@
-{
-  "parent": "block/template_fence_gate_wall",
-  "textures": {
-    "texture": "random_blocks:blocks/planks_oak_dead"
-  }
-}

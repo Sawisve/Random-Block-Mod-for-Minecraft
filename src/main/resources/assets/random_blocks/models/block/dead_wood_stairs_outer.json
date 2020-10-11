@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "random_blocks:blocks/planks_oak_dead",
-    "top": "random_blocks:blocks/planks_oak_dead",
-    "side": "random_blocks:blocks/planks_oak_dead"
-  }
-}

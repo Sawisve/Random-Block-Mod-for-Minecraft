@@ -2,131 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "Deadplain",
-      "type": "biome",
-      "sortid": 69,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dead_plains"
-    },
-    {
-      "name": "Deadoak",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dead_wood_log"
-    },
-    {
-      "name": "Deadleaves",
-      "type": "block",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dead_leaves"
-    },
-    {
-      "name": "Deadoakplanks",
-      "type": "block",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dead_wood_planks"
-    },
-    {
-      "name": "Deadop",
-      "type": "recipe",
-      "sortid": 70,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Deadoakstairs",
-      "type": "block",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dead_wood_stairs"
-    },
-    {
-      "name": "Deadows",
-      "type": "recipe",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Craftab",
-      "type": "recipe",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Stic",
-      "type": "recipe",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Swor",
-      "type": "recipe",
-      "sortid": 74,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Pikax",
-      "type": "recipe",
-      "sortid": 75,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Ax",
-      "type": "recipe",
-      "sortid": 76,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Shoveul",
-      "type": "recipe",
-      "sortid": 77,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Ou",
-      "type": "recipe",
-      "sortid": 78,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Bede",
-      "type": "recipe",
-      "sortid": 79,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "Wooden_armorArmor",
       "type": "armor",
       "sortid": 42,
@@ -437,74 +312,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Dust",
-      "type": "biome",
-      "sortid": 102,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "EtheriteOre",
-      "type": "block",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "etherite_ore"
-    },
-    {
-      "name": "EtheriteOreBlock",
-      "type": "block",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "etherite_block"
-    },
-    {
-      "name": "EtheriteGem",
-      "type": "item",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "etherite_gem"
-    },
-    {
-      "name": "EtheriteOreBlockRecipe",
-      "type": "recipe",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "EtheriteBlockOreRecipe",
-      "type": "recipe",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "EtheriteOreSmelting",
-      "type": "recipe",
-      "sortid": 105,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Ether",
-      "type": "dimension",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ether"
     },
     {
       "name": "Livingmice",
@@ -901,24 +708,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "go_to_a_strange_plain"
-    },
-    {
-      "name": "SkyLands",
-      "type": "dimension",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sky_lands"
-    },
-    {
-      "name": "SkyLandsBiome",
-      "type": "biome",
-      "sortid": 124,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sky_lands_biome"
     },
     {
       "name": "WoodenPath",
@@ -1331,15 +1120,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "headlt"
-    },
-    {
-      "name": "Skyllands",
-      "type": "achievement",
-      "sortid": 150,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "skyllands"
     },
     {
       "name": "PBS",
@@ -1980,35 +1760,6 @@
       }
     },
     {
-      "name": "SkyLandsPlayerEntersDimension",
-      "type": "procedure",
-      "sortid": 180,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sky_lands_player_enters_dimension",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Glove",
       "type": "tool",
       "sortid": 65,
@@ -2046,23 +1797,6 @@
           {
             "name": "world",
             "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TheCubeThisEntityKillsAnotherOne",
-      "type": "procedure",
-      "sortid": 182,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "the_cube_this_entity_kills_another_one",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
           }
         ]
       }
@@ -2162,94 +1896,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tp_nether"
-    },
-    {
-      "name": "TpEtherCommandExecuted",
-      "type": "procedure",
-      "sortid": 192,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tp_ether_command_executed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TpEther",
-      "type": "command",
-      "sortid": 193,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tp_ether"
-    },
-    {
-      "name": "TpSkylandsCommandExecuted",
-      "type": "procedure",
-      "sortid": 194,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tp_skylands_command_executed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TpSkylands",
-      "type": "command",
-      "sortid": 195,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tp_skylands"
-    },
-    {
-      "name": "Deadwooddoor",
-      "type": "block",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dead_wood_door"
-    },
-    {
-      "name": "DeadWoodSlab",
-      "type": "block",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dead_wood_slab"
-    },
-    {
-      "name": "DeadWoodFence",
-      "type": "block",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dead_wood_fence"
-    },
-    {
-      "name": "DeadWoodFenceGate",
-      "type": "block",
-      "sortid": 196,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dead_wood_fence_gate"
     },
     {
       "name": "Battery",
@@ -2422,31 +2068,26 @@
       "item.random_blocks.menu.desc": "Menu",
       "item.random_blocks.fonrium_pickaxe": "Fonrium Pickaxe",
       "key.mcreator.f4": "Super Dupper Graphics Pack",
-      "block.random_blocks.dead_wood_stairs": "Dead oak stairs",
       "item.random_blocks.dragon.desc": "Dragon",
-      "item.random_blocks.sky_lands": "Sky Lands Portal Igniter",
       "item.random_blocks.creative.desc": "Creative",
       "item.random_blocks.iron_spear": "Iron spear",
       "block.random_blocks.fonrium_block": "Block of Fonrium",
-      "block.random_blocks.dead_wood_door": "Dead wood door",
       "block.random_blocks.air": "Air",
       "block.random_blocks.chemical_rose": "Chemical Rose",
       "block.random_blocks.solar_panel": "Solar Panel",
       "key.mcreator.adventure": "Adventure",
       "block.random_blocks.lamp": "Lamp",
-      "block.random_blocks.dead_wood_fence_gate": "Dead Wood Fence Gate",
       "block.random_blocks.black_stone_stairs": "Black Stone Stair",
       "item.random_blocks.fonrium_axe": "Fonrium Axe",
       "block.random_blocks.engine": "Engine",
       "key.mcreator.survival": "Survival",
       "biome.random_blocks.dust": "Dust",
-      "advancements.skyllands.title": "SkyLands !",
       "block.random_blocks.pbss": "Polished Black Stone Stair",
-      "block.random_blocks.tea_table": "Teatable",
       "biome.random_blocks.dead_plains": "Dead plain",
+      "block.random_blocks.tea_table": "Teatable",
       "item.random_blocks.game": "Disc",
-      "item.random_blocks.fonriumbody": "Fonrium Chestplate",
       "item.random_blocks.diamond_spear": "Diamond spear",
+      "item.random_blocks.fonriumbody": "Fonrium Chestplate",
       "fluid.poisoned_water": "Poisonedwater",
       "item.random_blocks.woodenbody": "Wooden Chestplate",
       "block.random_blocks.pbsf": "Polished Black Stone Fence",
@@ -2463,11 +2104,9 @@
       "item.random_blocks.fonriumhelmet": "Fonrium Helmet",
       "block.random_blocks.polished_black_stone_slab": "Polished Black Stone Slab",
       "block.random_blocks.wooden_path": "Wooden Path",
-      "block.random_blocks.dead_leaves": "Dead leaves",
       "block.random_blocks.tomato_plant": "Tomato plant",
       "key.mcreator.spectator": "Spectator",
       "item.random_blocks.fonrium_helmet": "Fonrium Helmet",
-      "block.random_blocks.dead_wood_log": "Dead oak log",
       "item.random_blocks.glove": "Glove",
       "item.random_blocks.living_mice.desc": "Credits",
       "block.random_blocks.black_stone_slab": "Black Stone Slab",
@@ -2491,17 +2130,12 @@
       "item.random_blocks.chemicals": "Chemicals",
       "item.random_blocks.wooden_leggings": "Wooden Leggings",
       "item.random_blocks.living_mice": "Disc",
-      "block.random_blocks.dead_wood_planks": "Dead oak planks",
-      "block.random_blocks.etherite_ore": "Etherite Ore",
       "item.random_blocks.woodenhelmet": "Wooden Helmet",
-      "item.random_blocks.etherite_gem": "Etherite",
       "item.random_blocks.wooden_helmet": "Wooden Helmet",
-      "item.random_blocks.ether": "Ether Igniter",
       "item.random_blocks.fonrium": "Fonrium",
       "item.random_blocks.tomato": "Tomato",
       "item.random_blocks.powder": "Powder",
       "item.random_blocks.void_fragment": "Void Fragments",
-      "block.random_blocks.etherite_block": "Block of Etherite",
       "item.random_blocks.end": "Disc",
       "item.random_blocks.woodenboots": "Wooden Boots",
       "item.random_blocks.poisoned_water_bucket": "Poisonedwater Bucket",
@@ -2512,8 +2146,6 @@
       "item.random_blocks.stone_spear": "Stone spear",
       "item.random_blocks.fonrium_leggings": "Fonrium Leggings",
       "advancements.go_to_a_strange_plain.descr": "Go to a dead plain.",
-      "block.random_blocks.dead_wood_fence": "Dead Wood Fence",
-      "block.random_blocks.dead_wood_slab": "Dead Wood Slab",
       "item.random_blocks.fonriumlegs": "Fonrium Leggings",
       "block.random_blocks.polished_black_stone": "Polished Black Stone",
       "block.random_blocks.bananaplant": "Banana\u0027s plant",
@@ -2526,7 +2158,6 @@
       "item.random_blocks.fonrium_chestplate": "Fonrium Chestplate",
       "item.random_blocks.dragon": "Disc",
       "item.random_blocks.creative": "Disc",
-      "advancements.skyllands.descr": "Go to the SkyLands",
       "item.random_blocks.woodenlegs": "Wooden Leggings",
       "item.random_blocks.banana": "Banana"
     },
@@ -2535,31 +2166,26 @@
       "item.random_blocks.menu.desc": "Menu",
       "item.random_blocks.fonrium_pickaxe": "Pioche en fonrium",
       "key.mcreator.f4": "Super Dupper Graphics Pack",
-      "block.random_blocks.dead_wood_stairs": "Dead oak stairs",
       "item.random_blocks.dragon.desc": "Dragon",
-      "item.random_blocks.sky_lands": "Igniter du portail des SkyLands",
       "item.random_blocks.creative.desc": "Creative",
       "item.random_blocks.iron_spear": "Lance en fer",
       "block.random_blocks.fonrium_block": "Bloc de fonrium",
-      "block.random_blocks.dead_wood_door": "Dead wood door",
       "block.random_blocks.air": "Air",
       "block.random_blocks.chemical_rose": "Rose chimique",
       "block.random_blocks.solar_panel": "Solar Panel",
       "key.mcreator.adventure": "Creative",
       "block.random_blocks.lamp": "Lampe",
-      "block.random_blocks.dead_wood_fence_gate": "Dead Wood Fence Gate",
       "block.random_blocks.black_stone_stairs": "Éscalier en pierre noir",
       "item.random_blocks.fonrium_axe": "Hache en fonrium",
       "block.random_blocks.engine": "Engine",
       "key.mcreator.survival": "Survival",
       "biome.random_blocks.dust": "Poussière",
-      "advancements.skyllands.title": "SkyLands !",
       "block.random_blocks.pbss": "Polished Black Stone Stair",
-      "biome.random_blocks.dead_plains": "Plaines mortes",
       "block.random_blocks.tea_table": "Table basse",
+      "biome.random_blocks.dead_plains": "Plaines mortes",
       "item.random_blocks.game": "Disque",
-      "item.random_blocks.diamond_spear": "Diamond spear",
       "item.random_blocks.fonriumbody": "Plaston en fonrium",
+      "item.random_blocks.diamond_spear": "Diamond spear",
       "fluid.poisoned_water": "Eau emposonée",
       "item.random_blocks.woodenbody": "Plastron en bois",
       "block.random_blocks.pbsf": "Polished Black Stone Fence",
@@ -2576,11 +2202,9 @@
       "item.random_blocks.fonriumhelmet": "Casque en fonrium",
       "block.random_blocks.polished_black_stone_slab": "Polished Black Stone Slab",
       "block.random_blocks.wooden_path": "Chemin en bois",
-      "block.random_blocks.dead_leaves": "Feuilles mortes",
       "block.random_blocks.tomato_plant": "Plante de tomate",
       "key.mcreator.spectator": "Adventure",
       "item.random_blocks.fonrium_helmet": "Fonrium Helmet",
-      "block.random_blocks.dead_wood_log": "Dead oak log",
       "item.random_blocks.glove": "Gant",
       "block.random_blocks.black_stone_slab": "Dalle de pierre noir",
       "item.random_blocks.living_mice.desc": "Credits",
@@ -2604,17 +2228,12 @@
       "item.random_blocks.chemicals": "Chemicals",
       "item.random_blocks.wooden_leggings": "Wooden Leggings",
       "item.random_blocks.living_mice": "Disque",
-      "block.random_blocks.dead_wood_planks": "Dead oak planks",
-      "block.random_blocks.etherite_ore": "Minerais d\u0027etherite",
       "item.random_blocks.woodenhelmet": "Casque en fonrium",
-      "item.random_blocks.etherite_gem": "Etherite",
       "item.random_blocks.wooden_helmet": "Wooden Helmet",
-      "item.random_blocks.ether": "Igniteur de portail de l\u0027Ether",
       "item.random_blocks.fonrium": "Fonrium",
       "item.random_blocks.tomato": "Tomate",
       "item.random_blocks.powder": "Poudre",
       "item.random_blocks.void_fragment": "Void Fragments",
-      "block.random_blocks.etherite_block": "Bloc d\u0027etherite",
       "item.random_blocks.end": "Disque",
       "item.random_blocks.woodenboots": "Bottes en bois",
       "item.random_blocks.poisoned_water_bucket": "Seau d\u0027eau empoisonée",
@@ -2625,8 +2244,6 @@
       "item.random_blocks.stone_spear": "Lance en pierre",
       "item.random_blocks.fonrium_leggings": "Fonrium Leggings",
       "advancements.go_to_a_strange_plain.descr": "Aller dans une plaines mortes",
-      "block.random_blocks.dead_wood_fence": "Dead Wood Fence",
-      "block.random_blocks.dead_wood_slab": "Dead Wood Slab",
       "item.random_blocks.fonriumlegs": "Jambières en fonrium",
       "block.random_blocks.polished_black_stone": "Pierre noir poli",
       "block.random_blocks.bananaplant": "Plante de banane",
@@ -2639,7 +2256,6 @@
       "item.random_blocks.fonrium_chestplate": "Fonrium Chestplate",
       "item.random_blocks.dragon": "Disque",
       "item.random_blocks.creative": "Disque",
-      "advancements.skyllands.descr": "Go to the SkyLands",
       "item.random_blocks.woodenlegs": "Jambières en bois",
       "item.random_blocks.banana": "Banane"
     }

@@ -39,8 +39,7 @@
     "fireSpreadSpeed": 0,
     "frequencyOnChunks": 1,
     "spawnWorldTypes": [
-      "Surface",
-      "CUSTOM:SkyLands"
+      "Surface"
     ],
     "restrictionBiomes": [
       {
@@ -51,9 +50,6 @@
       },
       {
         "value": "taiga"
-      },
-      {
-        "value": "CUSTOM:SkyLandsBiome"
       }
     ],
     "onDestroyedByPlayer": {

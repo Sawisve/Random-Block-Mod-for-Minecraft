@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "random_blocks:blocks/etherite",
-    "particle": "random_blocks:blocks/etherite"
-  }
-}

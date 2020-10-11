@@ -42,7 +42,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.random_blocks.world.dimension.SkyLandsDimension;
 import net.mcreator.random_blocks.procedures.TomatoplantPlantDestroyedByPlayerProcedure;
 import net.mcreator.random_blocks.RandomBlocksModElements;
 
@@ -86,8 +85,6 @@ public class TomatoplantBlock extends RandomBlocksModElements.ModElement {
 				boolean dimensionCriteria = false;
 				if (dimensionType == DimensionType.OVERWORLD)
 					dimensionCriteria = true;
-				if (dimensionType == SkyLandsDimension.type)
-					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
 				return super.place(world, generator, random, pos, config);
@@ -100,8 +97,6 @@ public class TomatoplantBlock extends RandomBlocksModElements.ModElement {
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("forest")))
 				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("taiga")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("random_blocks:sky_lands_biome")))
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;

@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_inventory",
-  "textures": {
-    "texture": "random_blocks:blocks/planks_oak_dead",
-    "particle": "random_blocks:blocks/planks_oak_dead"
-  }
-}
