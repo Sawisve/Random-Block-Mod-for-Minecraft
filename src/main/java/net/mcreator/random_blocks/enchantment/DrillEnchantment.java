@@ -14,7 +14,7 @@ import net.mcreator.random_blocks.RandomBlocksModElements;
 
 @RandomBlocksModElements.ModElement.Tag
 public class DrillEnchantment extends RandomBlocksModElements.ModElement {
-	@ObjectHolder("random_blocks:drill")
+	@ObjectHolder("random_blocks:heating")
 	public static final Enchantment enchantment = null;
 	public DrillEnchantment(RandomBlocksModElements instance) {
 		super(instance, 206);
@@ -22,7 +22,7 @@ public class DrillEnchantment extends RandomBlocksModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("drill"));
+		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("heating"));
 	}
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
