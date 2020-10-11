@@ -273,15 +273,6 @@
       "registry_name": "poisoned_water"
     },
     {
-      "name": "TheChest",
-      "type": "structure",
-      "sortid": 99,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "the_chest"
-    },
-    {
       "name": "FonriumHelmetTickEvent",
       "type": "procedure",
       "sortid": 100,
