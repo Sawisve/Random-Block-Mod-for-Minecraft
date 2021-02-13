@@ -4,6 +4,7 @@ package net.mcreator.random_blocks.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.UseAction;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -25,12 +26,13 @@ public class TomatoItem extends RandomBlocksModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).food((new Food.Builder()).hunger(16).saturation(7f).build()));
+			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(16).saturation(7f).build()));
 			setRegistryName("tomato");
 		}
 
 		@Override
-		public UseAction getUseAction(ItemStack par1ItemStack) {
+		public UseAction getUseAction(ItemStack itemstack) {
 			return UseAction.EAT;
 		}
 	}

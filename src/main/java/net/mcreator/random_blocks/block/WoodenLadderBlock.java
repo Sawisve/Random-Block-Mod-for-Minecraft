@@ -14,6 +14,7 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Mirror;
@@ -82,18 +83,19 @@ public class WoodenLadderBlock extends RandomBlocksModElements.ModElement {
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+			Vec3d offset = state.getOffset(world, pos);
 			switch ((Direction) state.get(FACING)) {
 				case UP :
 				case DOWN :
 				case SOUTH :
 				default :
-					return VoxelShapes.create(1D, 0D, 0.2000000000000001D, 0D, 1D, 0.05D);
+					return VoxelShapes.create(1D, 0D, 0.2000000000000001D, 0D, 1D, 0.05D).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.create(0D, 0D, 0.7999999999999999D, 1D, 1D, 0.95D);
+					return VoxelShapes.create(0D, 0D, 0.7999999999999999D, 1D, 1D, 0.95D).withOffset(offset.x, offset.y, offset.z);
 				case WEST :
-					return VoxelShapes.create(0.7999999999999999D, 0D, 1D, 0.95D, 1D, 0D);
+					return VoxelShapes.create(0.7999999999999999D, 0D, 1D, 0.95D, 1D, 0D).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.create(0.2000000000000001D, 0D, 0D, 0.05D, 1D, 1D);
+					return VoxelShapes.create(0.2000000000000001D, 0D, 0D, 0.05D, 1D, 1D).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 
@@ -112,6 +114,7 @@ public class WoodenLadderBlock extends RandomBlocksModElements.ModElement {
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			;
 			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
 		}
 

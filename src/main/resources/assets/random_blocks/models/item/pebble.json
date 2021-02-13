@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "random_blocks:items/e8850a26cdef4cb4352801a4f9de7445"
+  }
+}

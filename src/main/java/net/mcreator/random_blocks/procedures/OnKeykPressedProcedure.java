@@ -16,7 +16,8 @@ public class OnKeykPressedProcedure extends RandomBlocksModElements.ModElement {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure OnKeykPressed!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure OnKeykPressed!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

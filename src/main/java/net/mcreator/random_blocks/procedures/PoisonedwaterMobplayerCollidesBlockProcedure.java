@@ -15,7 +15,8 @@ public class PoisonedwaterMobplayerCollidesBlockProcedure extends RandomBlocksMo
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure PoisonedwaterMobplayerCollidesBlock!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure PoisonedwaterMobplayerCollidesBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

@@ -122,11 +122,11 @@ public class GUIEGui extends RandomBlocksModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -153,7 +153,7 @@ public class GUIEGui extends RandomBlocksModElements.ModElement {
 						_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 					return _retval.get();
 				}
-			}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + "", 5, 5, -10197916);
+			}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + "", 4, 5, -10197916);
 		}
 
 		@Override

@@ -1,0 +1,9 @@
+{
+  "group": "random_blocks",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:cobblestone"
+  },
+  "result": "random_blocks:pebble"
+}

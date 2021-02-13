@@ -2,7 +2,7 @@
   "display": {
     "background": "random_blocks:textures/dead_oak.png",
     "icon": {
-      "item": "random_blocks:dead_wood_log"
+      "item": "random_blocks:unknown_element"
     },
     "title": {
       "translate": "advancements.go_to_a_strange_plain.title"
@@ -19,7 +19,7 @@
     "go_to_a_strange_plain": {
       "trigger": "minecraft:location",
       "conditions": {
-        "biome": "random_blocks:dead_plains"
+        "biome": "random_blocks:@registryname"
       }
     }
   },
